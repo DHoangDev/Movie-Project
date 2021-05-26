@@ -43,13 +43,11 @@ a:hover {
 #btn-mobile {
   display: none;
 }
-
 @media (max-width: 800px) {
-  #nav-center {
-    display: none;
-  }
+    #nav-center{
+        display: none;
+    }
 }
-
 @media (max-width: 600px) {
   #menu {
     display: block;
@@ -109,4 +107,3 @@ a:hover {
     top: -7px;
   }
 }
-/*# sourceMappingURL=style.css.map */
