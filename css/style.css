@@ -27,6 +27,10 @@ body {
   color: #fb4226;
 }
 
+#header nav .navbar-login {
+  line-height: 2.5px;
+}
+
 #header nav .navbar-login .nav-link {
   font-size: 13px;
   font-weight: 600;
