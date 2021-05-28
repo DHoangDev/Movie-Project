@@ -1,29 +1,28 @@
 #carousel{
+    margin-top: 60px;
     .carousel_slick{
         .carousel_item{
-            img{
-                width: 100%;
-            }
-            .carousel_item1{
-                height: 751px;
-            }
+            height: 82vh;
         }
         .slick-next{
             right: 20px;
             background-image: url('/img/next-session.png');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 100px;
+            top: 50%;
+            z-index: 10;
+            @include btnCarousel();
+            &::before {
+                display: none;
+            }
         }
         .slick-prev{
             left: 20px;
             background-image: url('/img/back-session.png');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 100px;
-            z-index: 100;
+            top: 50%;
+            z-index: 10;
+            @include btnCarousel();
+            &::before {
+                display: none;
+            }
         }
         .slick-dots{
             bottom: 100px;
