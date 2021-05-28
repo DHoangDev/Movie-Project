@@ -27,6 +27,10 @@
         }
         .slick-dots{
             bottom: 100px;
+            li{
+                width: 30px;
+                height: 30px;
+            }
         }
     }
 }
