@@ -6,8 +6,8 @@
         "../scss/helper/_variables.scss",
         "../scss/base/_reset.scss",
         "../scss/helper/_mixin.scss",
-        "../scss/component/_header.scss",
-        "../scss/component/_carousel.scss"
+        "../scss/components/_header.scss",
+        "../scss/components/_carousel.scss"
     ],
     "names": [],
     "file": "style.css"
