@@ -100,4 +100,9 @@ body {
 #carousel .carousel_slick .slick-dots {
   bottom: 100px;
 }
+
+#carousel .carousel_slick .slick-dots li {
+  width: 30px;
+  height: 30px;
+}
 /*# sourceMappingURL=style.css.map */

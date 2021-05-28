@@ -26,18 +26,20 @@
   <header id="header">
     <nav class="navbar navbar-expand-md bg-light navbar-dark">
       <!-- Brand -->
+      <div class="col-md-3">
       <a class="navbar-brand" href="#">
         <img src="./img/web-logo.png" alt="">
       </a>
-    
+     </div>
       <!-- Toggler/collapsibe Button -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
     
       <!-- Navbar links -->
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav nav-center">
+      <div class="col-md-9 collapse navbar-collapse" id="collapsibleNavbar">
+        <div class="col-md-9">
+          <ul class="navbar-nav nav-center">
           <li class="nav-item">
             <a class="nav-link" href="#">Lịch Chiếu</a>
           </li>
@@ -50,8 +52,8 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Ứng dụng</a>
         </ul>
-      </div>
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        </div>
+        <div class="col-nd-3">
         <ul class="navbar-nav nav-right">
           <li class="nav-item">
             <img class="nav-avatar" src="./img/avatar.png" alt="">
@@ -69,6 +71,7 @@
             </div>
           </li>
         </ul>
+      </div>
       </div>
     </nav>
   </header>
@@ -101,8 +104,8 @@
       $('.carousel_slick').slick({
         infinite: true,
         dots: true,
-        autoplay: true,
-        autoplaySpeed: 4000,
+        // autoplay: true,
+        // autoplaySpeed: 4000,
       });
     </script>
   </body>
