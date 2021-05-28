@@ -6,7 +6,7 @@
         }
         .slick-next{
             right: 20px;
-            background-image: url('/img/next-session.png');
+            background-image: url('./assets/images/next-session.png');
             top: 50%;
             z-index: 10;
             @include btnCarousel();
@@ -16,7 +16,7 @@
         }
         .slick-prev{
             left: 20px;
-            background-image: url('/img/back-session.png');
+            background-image: url('./assets/images/back-session.png');
             top: 50%;
             z-index: 10;
             @include btnCarousel();
