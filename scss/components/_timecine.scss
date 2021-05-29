@@ -1,0 +1,22 @@
+#timeCine {
+    max-width: 940px;
+    nav {
+        .nav-tabs {
+            border-bottom: unset;
+            .nav-link {
+                border: none;
+                font-size: 20px;
+                font-weight: 600;
+                transition: all .3s ease;
+                color: #000;
+                &.active {
+                    font-size: 24px;
+                    color: #fa5238;
+                }
+                &:hover {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Moive</title>
+  <title>Movie</title>
 
   <!-- Font Awesome 5 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -91,18 +91,81 @@
 
   <!-- Carousel -->
   <section id="carousel">
-    <div class="carousel_slick">
+    <div class="carousel_slick m-0">
       <div class="carousel_item">
-        <img class="w-100" src="./assets/images/trang-ti-16194117174325.jpg" alt="">
+        <img class="w-100 h-100" src="./assets/images/trang-ti-16194117174325.jpg" alt="">
+        <div class="background-linear"></div>
       </div>
       <div class="carousel_item">
-        <img class="w-100" src="./assets/images/lat-mat-48h-16177782153424.png" alt="">
+        <img class="w-100 h-100" src="./assets/images/lat-mat-48h-16177782153424.png" alt="">
+        <div class="background-linear"></div>
       </div>
       <div class="carousel_item">
-        <img class="w-100" src="./assets/images/ban-tay-diet-quy-evil-expeller-16177781815781.png" alt="">
+        <img class="w-100 h-100" src="./assets/images/ban-tay-diet-quy-evil-expeller-16177781815781.png" alt="">
+        <div class="background-linear"></div>
       </div>
     </div>
   </section>
+
+  <section id="selectFilm" class="d-none d-lg-block">
+    <div class="card ml-auto mr-auto">
+      <nav class="navbar navbar-expand-md">
+        <ul class="navbar-nav w-100">
+          <li class="nav-item main-block dropdown border-right">
+            <a href="" class="nav-link dropdown-toggle" id="filmDropdown" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Phim</a>
+            <div class="dropdown-menu" aria-labelledby="#filmDropdown">
+              <a href="" class="dropdown-item">Trạng Tí Phiêu Lưu Ký</a>
+              <a href="" class="dropdown-item">Lật Mặt: 48h</a>
+              <a href="" class="dropdown-item">Thiên Thần Hộ Mệnh - The Guardian (C18)</a>
+              <a href="" class="dropdown-item"></a>
+              <a href="" class="dropdown-item"></a>
+            </div>
+          </li>
+          <li class="nav-item small-block dropdown border-right">
+            <a href="" class="nav-link dropdown-toggle" id="cineDropdown" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Rạp</a>
+            <div class="dropdown-menu" aria-labelledby="#cineDropdown"></div>
+          </li>
+          <li class="nav-item small-block dropdown border-right">
+            <a href="" class="nav-link dropdown-toggle" id="dayDropdown" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Ngày Xem</a>
+            <div class="dropdown-menu" aria-labelledby="#dayDropdown"></div>
+          </li>
+          <li class="nav-item small-block dropdown border-right">
+            <a href="" class="nav-link dropdown-toggle" id="timeDropdown" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Xuất chiếu</a>
+            <div class="dropdown-menu" aria-labelledby="#timeDropdown"></div>
+          </li>
+          <li class="nav-item ml-2 small-block">
+            <button type="button" class="btn btn-dark w-100">MUA VÉ NGAY</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <section id="timeCine" class="ml-auto mr-auto mt-4">
+    <nav>
+      <div class="nav nav-tabs align-items-end" id="nav-tab" role="tablist">
+        <a class="nav-link ml-auto active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+          aria-controls="nav-home" aria-selected="true">Đang Chiếu</a>
+        <a class="nav-link mr-auto" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+          aria-controls="nav-profile" aria-selected="false">Sắp Chiếu</a>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+      </div>
+      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+      </div>
+    </div>
+  </section>
+
+
+
 
 
 
