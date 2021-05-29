@@ -1,0 +1,35 @@
+#carousel{
+    margin-top: 60px;
+    .carousel_slick{
+        .carousel_item{
+            height: 82vh;
+        }
+        .slick-next{
+            right: 20px;
+            background-image: url('./assets/images/next-session.png');
+            top: 50%;
+            z-index: 10;
+            @include btnCarousel();
+            &::before {
+                display: none;
+            }
+        }
+        .slick-prev{
+            left: 20px;
+            background-image: url('./assets/images/back-session.png');
+            top: 50%;
+            z-index: 10;
+            @include btnCarousel();
+            &::before {
+                display: none;
+            }
+        }
+        .slick-dots{
+            bottom: 100px;
+            li{
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}

@@ -2,42 +2,39 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Moive</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-  <!-- Font Awesome 5 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Font Awesome 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-  <!-- Bootstrap 4 -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <!-- Slick -->
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="./css/style.css">
-
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-  <!-- Header -->
-  <header id="header">
-    <nav class="navbar navbar-expand-md bg-light navbar-dark">
+ <!-- Header -->
+ <header id="header">
+  <nav class="navbar navbar-expand-md">
+    <div class="container-fluid">
       <!-- Brand -->
-      <div class="col-md-5">
       <a class="navbar-brand" href="#">
-        <img src="./img/web-logo.png" alt="">
+        <img class="w-50" src="./assets/images/web-logo.png" alt="">
       </a>
-     </div>
+
       <!-- Toggler/collapsibe Button -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-    
+
       <!-- Navbar links -->
-      <div class="col-md-7 collapse navbar-collapse" id="collapsibleNavbar">
-        <div class="col-md-8">
-          <ul class="navbar-nav nav-center">
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav navbar-menu ml-auto mr-auto">
           <li class="nav-item">
             <a class="nav-link" href="#">Lịch Chiếu</a>
           </li>
@@ -50,19 +47,32 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Ứng dụng</a>
         </ul>
-        </div>
-        <div class="col-md-4">
-        <ul class="navbar-nav nav-right">
+
+        <ul class="navbar-nav align-items-center navbar-login">
           <li class="nav-item">
-            <img class="nav-avatar" src="./img/avatar.png" alt="">
-            <a class="nav-link nav-login" href="#">Đăng nhập</a>
+            <a class="nav-link border-right" href="#"><img class="nav-avatar mr-2" src="./assets/images/avatar.png"
+                alt="">Đăng
+              Nhập</a>
           </li>
-          <li class="nav-item dropdown nav-dropdown">
-            <i class="fas fa-map-marker-alt"></i>
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              Hồ Chí Minh
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-map-marker-alt"></i> Hồ Chí Minh
             </a>
-            <div class="dropdown-menu">
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Hồ Chí Minh</a>
+              <a class="dropdown-item" href="#">Hà Nội</a>
+              <a class="dropdown-item" href="#">Đà Nẵng</a>
+              <a class="dropdown-item" href="#">Hải Phòng</a>
+              <a class="dropdown-item" href="#">Hồ Chí Minh</a>
+              <a class="dropdown-item" href="#">Hà Nội</a>
+              <a class="dropdown-item" href="#">Đà Nẵng</a>
+              <a class="dropdown-item" href="#">Hải Phòng</a>
+              <a class="dropdown-item" href="#">Hồ Chí Minh</a>
+              <a class="dropdown-item" href="#">Hà Nội</a>
+              <a class="dropdown-item" href="#">Đà Nẵng</a>
+              <a class="dropdown-item" href="#">Hải Phòng</a>
+              <a class="dropdown-item" href="#">Hồ Chí Minh</a>
               <a class="dropdown-item" href="#">Hà Nội</a>
               <a class="dropdown-item" href="#">Đà Nẵng</a>
               <a class="dropdown-item" href="#">Hải Phòng</a>
@@ -70,29 +80,28 @@
           </li>
         </ul>
       </div>
-      </div>
-    </nav>
-  </header>
-
-  <!-- Banner -->
-  <section id="banner">
-    <div class="banner_section">
-      <img src="./img/trang-ti-16190592773054.jpg" alt="">
-      <div class="styleGardient"></div>
     </div>
-    <div class="banner_detail">
-      
-    </div>
-  </section>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-    crossorigin="anonymous"></script>
+  </nav>
+</header>
 
+<!-- Banner -->
+<section id="banner">
+  <div class="banner_section">
+    <img src="./assets/images/trang-ti-16190592773054.jpg" alt="">
+    <div class="styleGardient"></div>
+  </div>
+  <div class="banner_detail">
+    
+  </div>
+</section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
 
-  </body>
+</body>
 
 </html>
