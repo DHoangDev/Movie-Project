@@ -1,0 +1,73 @@
+#nav{
+    transform: translate(0,-70px);
+    background-color: rgb(10, 32, 41);
+    padding-bottom: 60px;   
+    .nav_width{
+        max-width: 870px;
+        margin: auto;
+        .nav{
+            justify-content: center;
+        }
+        .nav-pills{
+            .nav-link.active{
+                background: transparent;
+                color: #fb4226;
+                font-size: 20px;             
+            }
+            .nav-link{
+                font-size: 18px;
+                color: white;
+                transition: all 0.2s;   
+                font-weight: 600;
+                line-height: 24px;
+                height: 24px;
+                &:hover{
+                    font-size: 20px;
+                }
+            }
+        }
+        .tab_detail{
+            margin-top: 40px;
+            .film_left{
+                padding: 0 7px;
+                margin-bottom: 0;
+                .filmleft_info{
+                    .filmleft_title1{
+                        color: #fff;
+                        width: 35%;
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+                    .filmleft_title2{
+                        color: #fff;
+                        width: 35%;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .film_right{
+                padding: 0 7px;
+                margin-bottom: 0;
+                .filmleft_info{
+                    .filmleft_title1{
+                        color: #fff;
+                        width: 35%;
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+                    .filmleft_title2{
+                        color: #fff;
+                        width: 35%;
+                        font-size: 14px;
+                    }
+                    .filmleft_decription{
+                        color: #fff;
+                        width: 100%;
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
