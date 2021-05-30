@@ -18,7 +18,7 @@ body {
 
 #header nav .navbar-menu .nav-link {
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   color: #000;
   margin-right: .5rem;
   -webkit-transition: all .2s;
@@ -34,6 +34,7 @@ body {
   font-weight: 600;
   color: #9b9b9b;
   padding: 0 1rem;
+  line-height: 2.5;
 }
 
 #header nav .navbar-login .nav-link .nav-avatar {
@@ -51,12 +52,38 @@ body {
 
 #header nav .navbar-login .dropdown-menu .dropdown-item {
   color: #333;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 #header nav .navbar-login .dropdown-menu .dropdown-item:hover {
   background-color: #60c5ef;
   color: #fff;
+}
+
+#banner .banner_section {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+#banner .banner_section img {
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  margin: 0px 0 0px -5px;
+  width: calc(100% + 5px);
+  height: auto;
+}
+
+#banner .banner_section .styleGardient {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: -webkit-gradient(linear, left bottom, left top, from(#0a2029), to(transparent));
+  background: linear-gradient(to top, #0a2029, transparent 100%);
 }
 
 #carousel {

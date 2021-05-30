@@ -10,7 +10,7 @@
     .navbar-menu {
       .nav-link {
         font-size: 14px;
-        font-weight: 700;
+        font-weight: 600;
         color: #000;
         margin-right: .5rem;
         transition: all .2s;
@@ -25,6 +25,7 @@
         font-weight: 600;
         color: #9b9b9b;
         padding: 0 1rem;
+        line-height: 2.5;
         .nav-avatar {
           width: 30px;
           height: auto;
@@ -38,7 +39,7 @@
         top: 36px;
         .dropdown-item {
           color: #333;
-          font-weight: 700;
+          font-weight: 600;
           &:hover {
             background-color: #60c5ef;
             color: #fff;
