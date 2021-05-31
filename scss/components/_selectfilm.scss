@@ -1,0 +1,43 @@
+#selectFilm {
+    margin-top: -40px;
+    .card {
+        max-width: 940px;
+        padding: 12px 0;
+        box-shadow: 0 0 10px rgba(0,0,0,.3);
+        .nav-link {
+            color: #000;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .dropdown-toggle {
+            position: relative;
+            font-weight: 700;
+            &::after {
+                position: absolute;
+                margin-right: .6em;
+                right: 0;
+                top: 50%;
+            }
+        }
+        .dropdown-menu {
+            left: -17px;
+            min-width: 160px;
+            max-height: 300px;
+            overflow-y: scroll;
+            .dropdown-item {
+                font-size: 14px;
+                font-weight: 700;
+            }
+        }
+        .btn {
+            font-size: 14px;
+            font-weight: 700;
+        }
+    }
+    .main-block {
+        width: 30%;
+    }
+    .small-block {
+        width: calc(70% / 4);
+    }
+}

@@ -1,0 +1,83 @@
+#footer{
+    background-color: #222;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #949494;
+    .footer_width{
+        max-width: 940px;
+        margin: auto;
+        .footer_title{
+            color: #fff;
+            font-size: 80%;
+        }
+        .footer_tittle__detail{
+            a{
+                font-size: 12px!important;
+                font-weight: 700;
+                white-space: nowrap;
+                color: #949494;
+                display: block;
+                transition: all .2s;
+                line-height: 2.3;
+                &:hover{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+        .footer_item{
+            margin-bottom: 15px;
+            a{
+                text-decoration: none;
+                color: #000;
+                transition: all .2s;
+                .bgc{
+                    background-color: white;
+                }
+                img{
+                    background-color: transparent;
+                    border-radius: 50%;
+                    height: 30px;
+                    width: 30px;
+                    margin-right: 15px;              
+                }
+                &:hover img{
+                    opacity: .7;
+                }
+            }
+        }
+        .footer_card{
+            a{
+                img{
+                    background: 0 0;
+                    height: 30px;
+                    width: auto;
+                    margin: 5px;
+                }
+            }
+        }
+        .hrfooter{
+            border-top: 1px solid #4a4a4a;
+        }
+        .footer_img{
+            width: 80px;
+            height: auto;
+        }
+        .info_footer{
+            color: #fff;
+            font-size: 70%;  
+            padding-left: 28px;
+            span{   
+                display: block;
+                line-height: 1.8;
+                color: #949494;
+                font-size: 12px;
+                font-weight: 400;
+            }          
+        }
+        .footer_img2{
+            width: 130px;
+            float: right;
+        }
+    }
+}

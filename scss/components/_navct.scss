@@ -1,8 +1,7 @@
 #nav{
-    transform: translate(0,-70px);
-    background-color: rgb(10, 32, 41);
-    padding-bottom: 60px;   
+    background-color: rgb(10, 32, 41);   
     .nav_width{
+        transform: translate(0,-70px);
         max-width: 870px;
         margin: auto;
         .nav{
@@ -64,9 +63,174 @@
                         color: #fff;
                         width: 100%;
                         font-size: 14px;
-                        font-weight: 600;
                     }
                 }
+            }
+        }
+        .tab-pane{
+            .nav_review{
+                max-width: 810px;
+                margin: auto;
+                .nav_input{
+                    position: relative;
+                    cursor: pointer;
+                    max-width: 580px;
+                    margin: 0 calc(50% - 290px);
+                    padding: 0;
+                    .imgReview{
+                        position: absolute;
+                        top: 20%;
+                        left: 3%;
+
+                        img{
+                            height: 36px;
+                            width: 36px;
+                            border-radius: 25px;
+                        }                   
+                    }
+                    .inputreview{
+                        padding: 10px 10px 10px 55px;
+                        width: 100%;
+                        height: 60px;
+                        border-radius: 4px;
+                        border: 1px solid #e8e8e9;
+                        background: #fff;
+                        color: #9b9b9b;
+                        font-size: 14px;
+                    }
+                    .imgReviewstar{
+                        position: absolute;
+                        top: 30%;
+                        right: 3%;
+                    }
+                }
+            .nav-listcomment{
+                .reviewcontain{
+                    border: 1px solid #e6e6e6;
+                    border-bottom: none;
+                    border-radius: 3px;
+                    margin: 15px calc(50% - 290px) 0;
+                    background-color: #fff;
+                    max-width: 580px;
+                    .reviewcontain_comment{
+                        position: relative;
+                        width: 100%;
+                        padding: 20px 20px 12px;
+                        border-bottom: 1px solid #e6e6e6;
+                        .reviewcontain_userinfo{
+                            display: flex;
+                            justify-content: space-between;
+                            margin: 0;
+                            .inforeview{
+                                display: flex;
+                                text-decoration: none;
+                                .inforeviewicon{
+                                    display: flex;
+                                    position: relative;
+                                    img{
+                                        height: 32px;
+                                        width: 32px;
+                                        border-radius: 25px;
+                                    }
+                                }
+                                .inforeviewname{
+                                    margin-left: 10px;
+                                    color: #000;
+                                    display: inline-block;
+                                    height: 32px;
+                                    font-size: 14px;
+                                    p{
+                                        color: black;
+                                        font-weight: 600;
+                                    }
+                                   .inforeviewtime{
+                                    font-size: 10px;
+                                    color: #9b9b9b;
+                                    line-height: 1;
+                                    margin: -15px 0 10px;
+                                   }
+                                }
+                            }
+                            .infostar{
+                                float: right;
+                                .core{
+                                    color: #91d25a;
+                                    font-size: 16px;
+                                    margin: auto;
+                                    p{
+                                        text-align: center;
+                                        margin-bottom: 0;
+                                    }
+                                }
+                                .info_iconstar{
+                                    .smallstar{
+                                        max-width: 8px;
+                                        height: auto;
+                                    }                                    
+                                }
+                            }
+                        }
+                        .reviewmain_comment{
+                            position: relative;
+                            margin-left: 0;
+                            margin-right: 0;
+                            .reviewcontain_usercomment{
+                                background-color: transparent;
+                                padding: 10px 0;
+                                font-size: 14px;
+                                color: #4a4a4a!important;
+                                letter-spacing: -.2px;
+                                border-radius: 4px;
+                                font-weight: 500;
+                            }
+                        } 
+                                              
+                        .count{
+                            padding: 10px 0 0 0;
+                            margin-top: 0;
+                            border-top: 1px solid #e6e6e6;
+                            text-align: left;
+                            .iconlike{
+                                margin-right: 40px;
+                                cursor: pointer;
+                                img{
+                                    margin-right: 10px;
+                                    cursor: pointer;
+                                    height: 16px;
+                                    width: 16px;
+                                    margin-top: -5px;                                   
+                                    transition: all .2s;
+                                }
+                                &:hover img{
+                                    transform: scale(1.1)!important;
+                                }
+                            }
+                            }
+                         
+                    }
+                }
+            }
+            }
+            .btn-xemthem{
+                .btnViewMore{
+                    font-size: 14px;
+                    color: #949494;
+                    border: 1px solid #949494;
+                    border-radius: 4px;
+                    text-align: center;
+                    background: 0 0;
+                    padding: 7px 25px;
+                    transition: all .2s;
+                    margin: auto;
+                    margin-top: 35px;
+                    margin-bottom: 20px;
+                    display: block;
+                    &:hover{
+                        background-color: #fb4226;
+                        border-color: #fb4226;
+                        color: #fff!important;                  
+                    }
+                }   
             }
         }
     }

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Moive</title>
+  <title>Movie</title>
 
   <!-- Font Awesome 5 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -91,18 +91,907 @@
 
   <!-- Carousel -->
   <section id="carousel">
-    <div class="carousel_slick">
+    <div class="carousel_slick_1 m-0">
       <div class="carousel_item">
-        <img class="w-100" src="./assets/images/trang-ti-16194117174325.jpg" alt="">
+        <a href="">
+          <img class="w-100 h-100" src="./assets/images/trang-ti-16194117174325.jpg" alt="">
+          <button><img src="./assets/images/play-video.png" alt=""></button>
+        </a>
+        <div class="background-linear"></div>
       </div>
       <div class="carousel_item">
-        <img class="w-100" src="./assets/images/lat-mat-48h-16177782153424.png" alt="">
+        <a href="">
+          <img class="w-100 h-100" src="./assets/images/lat-mat-48h-16177782153424.png" alt="">
+          <button><img src="./assets/images/play-video.png" alt=""></button>
+        </a>
+        <div class="background-linear"></div>
       </div>
       <div class="carousel_item">
-        <img class="w-100" src="./assets/images/ban-tay-diet-quy-evil-expeller-16177781815781.png" alt="">
+        <a href="">
+          <img class="w-100 h-100" src="./assets/images/ban-tay-diet-quy-evil-expeller-16177781815781.png" alt="">
+          <button><img src="./assets/images/play-video.png" alt=""></button>
+        </a>
+        <div class="background-linear"></div>
       </div>
     </div>
   </section>
+
+  <section id="selectFilm" class="d-none d-lg-block">
+    <div class="card ml-auto mr-auto">
+      <nav class="navbar navbar-expand-md">
+        <ul class="navbar-nav w-100">
+          <li class="nav-item main-block dropdown border-right">
+            <a href="" class="nav-link dropdown-toggle" id="filmDropdown" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Phim</a>
+            <div class="dropdown-menu" aria-labelledby="#filmDropdown">
+              <a href="" class="dropdown-item">Trạng Tí Phiêu Lưu Ký</a>
+              <a href="" class="dropdown-item">Lật Mặt: 48h</a>
+              <a href="" class="dropdown-item">Thiên Thần Hộ Mệnh - The Guardian (C18)</a>
+              <a href="" class="dropdown-item"></a>
+              <a href="" class="dropdown-item"></a>
+            </div>
+          </li>
+          <li class="nav-item small-block dropdown border-right">
+            <a href="" class="nav-link dropdown-toggle" id="cineDropdown" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Rạp</a>
+            <div class="dropdown-menu" aria-labelledby="#cineDropdown"></div>
+          </li>
+          <li class="nav-item small-block dropdown border-right">
+            <a href="" class="nav-link dropdown-toggle" id="dayDropdown" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Ngày Xem</a>
+            <div class="dropdown-menu" aria-labelledby="#dayDropdown"></div>
+          </li>
+          <li class="nav-item small-block dropdown border-right">
+            <a href="" class="nav-link dropdown-toggle" id="timeDropdown" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Xuất chiếu</a>
+            <div class="dropdown-menu" aria-labelledby="#timeDropdown"></div>
+          </li>
+          <li class="nav-item ml-2 small-block">
+            <button type="button" class="btn btn-dark w-100">MUA VÉ NGAY</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <section id="timeCine" class="ml-auto mr-auto mt-4">
+    <nav>
+      <div class="nav nav-tabs align-items-end" id="nav-tab" role="tablist">
+        <a class="nav-link ml-auto active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+          aria-controls="nav-home" aria-selected="true">Đang Chiếu</a>
+        <a class="nav-link mr-auto" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+          aria-controls="nav-profile" aria-selected="false">Sắp Chiếu</a>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+        <div class="carousel_slick_2">
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="film">
+                      <a href="">
+                        <div class="film-Thumnail img img-1">
+                          <div class="overlay">
+                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
+                          </div>
+                          <span>
+                            <p>8.8</p>
+                            <p>
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.2.png" alt="">
+                            </p>
+                          </span>
+                        </div>
+                      </a>
+                      <div class="info">
+                        <div class="nameFilm">
+                          <span class="ageType ageType-general">P</span>
+                          Trạng Tí Phiêu Lưu Ký
+                        </div>
+                        <div class="infoFilm">100 Phút</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="film">
+                      <a href="">
+                        <div class="film-Thumnail img img-2">
+                          <div class="overlay">
+                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
+                          </div>
+                          <span>
+                            <p>8.8</p>
+                            <p>
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.2.png" alt="">
+                            </p>
+                          </span>
+                        </div>
+                      </a>
+                      <div class="info">
+                        <div class="nameFilm">
+                          <span class="ageType">C18</span>
+                          Lật Mặt: 48h
+                        </div>
+                        <div class="infoFilm">100 Phút</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="film">
+                      <a href="">
+                        <div class="film-Thumnail img img-3">
+                          <div class="overlay">
+                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
+                          </div>
+                          <span>
+                            <p>8.8</p>
+                            <p>
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.2.png" alt="">
+                            </p>
+                          </span>
+                        </div>
+                      </a>
+                      <div class="info">
+                        <div class="nameFilm">
+                          <span class="ageType">C18</span>
+                          Thiên Thần Hộ Mệnh - The Guardian (C18)
+                        </div>
+                        <div class="infoFilm">124 Phút</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="film">
+                      <a href="">
+                        <div class="film-Thumnail img img-4">
+                          <div class="overlay">
+                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
+                          </div>
+                          <span>
+                            <p>8.8</p>
+                            <p>
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.2.png" alt="">
+                            </p>
+                          </span>
+                        </div>
+                      </a>
+                      <div class="info">
+                        <div class="nameFilm">
+                          <span class="ageType">C13</span>
+                          Detective Conan: Scarlet Bullet - Thám Tử Lừng Danh Conan: Viên Đạn Đỏ - C13
+                        </div>
+                        <div class="infoFilm">110 phút - 6.6 IMDb</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="film">
+                      <a href="">
+                        <div class="film-Thumnail img img-5">
+                          <div class="overlay">
+                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
+                          </div>
+                          <span>
+                            <p>8.8</p>
+                            <p>
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.2.png" alt="">
+                            </p>
+                          </span>
+                        </div>
+                      </a>
+                      <div class="info">
+                        <div class="nameFilm">
+                          <span class="ageType">C16</span>
+                          Người Nhân Bản - Seobok (C16)
+                        </div>
+                        <div class="infoFilm">114 phút - 6.3 IMDb</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="film">
+                      <a href="">
+                        <div class="film-Thumnail img img-6">
+                          <div class="overlay">
+                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
+                          </div>
+                          <span>
+                            <p>8.8</p>
+                            <p>
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.2.png" alt="">
+                            </p>
+                          </span>
+                        </div>
+                      </a>
+                      <div class="info">
+                        <div class="nameFilm">
+                          <span class="ageType">C16</span>
+                          Bàn Tay Diệt Quỷ - Evil Expeller (C16)
+                        </div>
+                        <div class="infoFilm">129 phút</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="film">
+                      <a href="">
+                        <div class="film-Thumnail img img-7">
+                          <div class="overlay">
+                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
+                          </div>
+                          <span>
+                            <p>8.8</p>
+                            <p>
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.2.png" alt="">
+                            </p>
+                          </span>
+                        </div>
+                      </a>
+                      <div class="info">
+                        <div class="nameFilm">
+                          <span class="ageType">C18</span>
+                          Kẻ Vô Danh - Nobody - C18
+                        </div>
+                        <div class="infoFilm">92 phút - 7.4 IMDb</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="film">
+                      <a href="">
+                        <div class="film-Thumnail img img-8">
+                          <div class="overlay">
+                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
+                          </div>
+                          <span>
+                            <p>8.8</p>
+                            <p>
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.2.png" alt="">
+                            </p>
+                          </span>
+                        </div>
+                      </a>
+                      <div class="info">
+                        <div class="nameFilm">
+                          <span class="ageType">C18</span>
+                          Hùng Thần Trắng - Great White - C18
+                        </div>
+                        <div class="infoFilm">100 phút - 3.9 IMDb</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="film">
+                      <a href="">
+                        <div class="film-Thumnail img img-9">
+                          <div class="overlay"><button><img class="w-100 d-block" src="./assets/images/play-video.png"
+                                alt=""></button></div>
+                          <span>
+                            <p>8.8</p>
+                            <p>
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.2.png" alt="">
+                            </p>
+                          </span>
+                        </div>
+                      </a>
+                      <div class="info">
+                        <div class="nameFilm">
+                          <span class="ageType">C18</span>
+                          Chiến Binh Cuối Cùng: Cuội Nguồn Của Quỷ - The Last Warrior: Root Of Evil - C13
+                        </div>
+                        <div class="infoFilm">122 phút - 5.9 IMDb</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="film">
+                      <a href="">
+                        <div class="film-Thumnail img img-10">
+                          <div class="overlay"><button><img class="w-100 d-block" src="./assets/images/play-video.png"
+                                alt=""></button></div>
+                          <span>
+                            <p>8.8</p>
+                            <p>
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.2.png" alt="">
+                            </p>
+                          </span>
+                        </div>
+                      </a>
+                      <div class="info">
+                        <div class="nameFilm">
+                          <span class="ageType ageType-general">P</span>
+                          Ong Nhí Phiêu Lưu Ký: Giải Cứu Công Chúa Kiến - Maya The Bee 3: The Golden Orb - P
+                        </div>
+                        <div class="infoFilm">88 phút</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="film">
+                      <a href="">
+                        <div class="film-Thumnail img img-11">
+                          <div class="overlay"><button><img class="w-100 d-block" src="./assets/images/play-video.png"
+                                alt=""></button></div>
+                          <span>
+                            <p>8.8</p>
+                            <p>
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.2.png" alt="">
+                            </p>
+                          </span>
+                        </div>
+                      </a>
+                      <div class="info">
+                        <div class="nameFilm">
+                          <span class="ageType">C13</span>
+                          Nhân Đôi Tình Yêu - Double Party - C13
+                        </div>
+                        <div class="infoFilm">107 phút</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="film">
+                      <a href="">
+                        <div class="film-Thumnail img img-12">
+                          <div class="overlay"><button><img class="w-100 d-block" src="./assets/images/play-video.png"
+                                alt=""></button></div>
+                          <span>
+                            <p>8.8</p>
+                            <p>
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.2.png" alt="">
+                            </p>
+                          </span>
+                        </div>
+                      </a>
+                      <div class="info">
+                        <div class="nameFilm">
+                          <span class="ageType">C18</span>
+                          Trùm Cuối Siêu Đẳng - Boss Level - C18
+                        </div>
+                        <div class="infoFilm">100 phút - 6.9 IMDb</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="film">
+                      <a href="">
+                        <div class="film-Thumnail img img-13">
+                          <div class="overlay"><button><img class="w-100 d-block" src="./assets/images/play-video.png"
+                                alt=""></button></div>
+                          <span>
+                            <p>8.8</p>
+                            <p>
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.2.png" alt="">
+                            </p>
+                          </span>
+                        </div>
+                      </a>
+                      <div class="info">
+                        <div class="nameFilm">
+                          <span class="ageType">C18</span>
+                          The Hypnosis - Con Lắc Tà Thuật - C18
+                        </div>
+                        <div class="infoFilm">100 phút - 6.5 IMDb</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="film">
+                      <a href="">
+                        <div class="film-Thumnail img img-14">
+                          <div class="overlay"><button><img class="w-100 d-block" src="./assets/images/play-video.png"
+                                alt=""></button></div>
+                          <span>
+                            <p>8.8</p>
+                            <p>
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.png" alt="">
+                              <img src="./assets/images/star1.2.png" alt="">
+                            </p>
+                          </span>
+                        </div>
+                      </a>
+                      <div class="info">
+                        <div class="nameFilm">
+                          <span class="ageType">C13</span>
+                          Godzilla vs. Kong
+                        </div>
+                        <div class="infoFilm">100 phút - 6.5 IMDb</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3"></div>
+                  <div class="col-md-3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+        <div class="carousel_slick_3">
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="film">
+                      <a href="">
+                        <div class="film-Thumnail img img-1">
+                          <div class="overlay">
+                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
+                          </div>
+                          <span>05/03</span>
+                        </div>
+                      </a>
+                      <div class="info">
+                        <div class="nameFilm">
+                          <span class="ageType ageType-general">P</span>
+                          Trạng Tí Phiêu Lưu Ký
+                        </div>
+                        <div class="infoFilm">100 Phút</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="film">
+                      <a href="">
+                        <div class="film-Thumnail img img-2">
+                          <div class="overlay">
+                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
+                          </div>
+                          <span>01/04</span>
+                        </div>
+                      </a>
+                      <div class="info">
+                        <div class="nameFilm">
+                          <span class="ageType">C18</span>
+                          Lật Mặt: 48h
+                        </div>
+                        <div class="infoFilm">100 Phút</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="film">
+                      <a href="">
+                        <div class="film-Thumnail img img-3">
+                          <div class="overlay">
+                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
+                          </div>
+                          <span>01/04</span>
+                        </div>
+                      </a>
+                      <div class="info">
+                        <div class="nameFilm">
+                          <span class="ageType">C18</span>
+                          Thiên Thần Hộ Mệnh - The Guardian (C18)
+                        </div>
+                        <div class="infoFilm">124 Phút</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="film">
+                      <a href="">
+                        <div class="film-Thumnail img img-4">
+                          <div class="overlay">
+                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
+                          </div>
+                          <span>01/04</span>
+                        </div>
+                      </a>
+                      <div class="info">
+                        <div class="nameFilm">
+                          <span class="ageType">C13</span>
+                          Detective Conan: Scarlet Bullet - Thám Tử Lừng Danh Conan: Viên Đạn Đỏ - C13
+                        </div>
+                        <div class="infoFilm">110 phút - 6.6 IMDb</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="film">
+                      <a href="">
+                        <div class="film-Thumnail img img-5">
+                          <div class="overlay">
+                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
+                          </div>
+                          <span>05/03</span>
+                        </div>
+                      </a>
+                      <div class="info">
+                        <div class="nameFilm">
+                          <span class="ageType">C16</span>
+                          Người Nhân Bản - Seobok (C16)
+                        </div>
+                        <div class="infoFilm">114 phút - 6.3 IMDb</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="film">
+                      <a href="">
+                        <div class="film-Thumnail img img-6">
+                          <div class="overlay">
+                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
+                          </div>
+                          <span>05/03</span>
+                        </div>
+                      </a>
+                      <div class="info">
+                        <div class="nameFilm">
+                          <span class="ageType">C16</span>
+                          Bàn Tay Diệt Quỷ - Evil Expeller (C16)
+                        </div>
+                        <div class="infoFilm">129 phút</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="film">
+                      <a href="">
+                        <div class="film-Thumnail img img-7">
+                          <div class="overlay">
+                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
+                          </div>
+                          <span>05/03</span>
+                        </div>
+                      </a>
+                      <div class="info">
+                        <div class="nameFilm">
+                          <span class="ageType">C18</span>
+                          Kẻ Vô Danh - Nobody - C18
+                        </div>
+                        <div class="infoFilm">92 phút - 7.4 IMDb</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="film">
+                      <a href="">
+                        <div class="film-Thumnail img img-8">
+                          <div class="overlay">
+                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
+                          </div>
+                          <span>05/03</span>
+                        </div>
+                      </a>
+                      <div class="info">
+                        <div class="nameFilm">
+                          <span class="ageType">C18</span>
+                          Hùng Thần Trắng - Great White - C18
+                        </div>
+                        <div class="infoFilm">100 phút - 3.9 IMDb</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="film">
+                      <a href="">
+                        <div class="film-Thumnail img img-9">
+                          <div class="overlay">
+                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
+                          </div>
+                          <span>05/03</span>
+                        </div>
+                      </a>
+                      <div class="info">
+                        <div class="nameFilm">
+                          <span class="ageType">C18</span>
+                          Chiến Binh Cuối Cùng: Cuội Nguồn Của Quỷ - The Last Warrior: Root Of Evil - C13
+                        </div>
+                        <div class="infoFilm">122 phút - 5.9 IMDb</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="film">
+                      <a href="">
+                        <div class="film-Thumnail img img-10">
+                          <div class="overlay">
+                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
+                          </div>
+                          <span>05/03</span>
+                        </div>
+                      </a>
+                      <div class="info">
+                        <div class="nameFilm">
+                          <span class="ageType ageType-general">P</span>
+                          Ong Nhí Phiêu Lưu Ký: Giải Cứu Công Chúa Kiến - Maya The Bee 3: The Golden Orb - P
+                        </div>
+                        <div class="infoFilm">88 phút</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="film">
+                      <a href="">
+                        <div class="film-Thumnail img img-11">
+                          <div class="overlay">
+                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
+                          </div>
+                          <span>05/03</span>
+                        </div>
+                      </a>
+                      <div class="info">
+                        <div class="nameFilm">
+                          <span class="ageType ageType-general">C13</span>
+                          Nhân Đôi Tình Yêu - Double Party - C13
+                        </div>
+                        <div class="infoFilm">107 phút</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="film">
+                      <a href="">
+                        <div class="film-Thumnail img img-12">
+                          <div class="overlay">
+                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
+                          </div>
+                          <span>05/03</span>
+                        </div>
+                      </a>
+                      <div class="info">
+                        <div class="nameFilm">
+                          <span class="ageType ageType-general">C18</span>
+                          Trùm Cuối Siêu Đẳng - Boss Level - C18
+                        </div>
+                        <div class="infoFilm">100 phút - 6.9 IMDb</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="film">
+                      <a href="">
+                        <div class="film-Thumnail img img-13">
+                          <div class="overlay">
+                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
+                          </div>
+                          <span>05/03</span>
+                        </div>
+                      </a>
+                      <div class="info">
+                        <div class="nameFilm">
+                          <span class="ageType ageType-general">C18</span>
+                          The Hypnosis - Con Lắc Tà Thuật - C18
+                        </div>
+                        <div class="infoFilm">100 phút - 6.5 IMDb</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="film">
+                      <a href="">
+                        <div class="film-Thumnail img img-14">
+                          <div class="overlay">
+                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
+                          </div>
+                          <span>05/03</span>
+                        </div>
+                      </a>
+                      <div class="info">
+                        <div class="nameFilm">
+                          <span class="ageType ageType-general">C13</span>
+                          Godzilla vs. Kong
+                        </div>
+                        <div class="infoFilm">100 phút - 6.5 IMDb</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="film">
+                      <a href="">
+                        <div class="film-Thumnail img img-15">
+                          <div class="overlay">
+                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
+                          </div>
+                          <span>05/03</span>
+                        </div>
+                      </a>
+                      <div class="info">
+                        <div class="nameFilm">
+                          <span class="ageType ageType-general">C13</span>
+                          Godzilla vs. Kong
+                        </div>
+                        <div class="infoFilm">100 phút - 6.5 IMDb</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="film">
+                      <a href="">
+                        <div class="film-Thumnail img img-16">
+                          <div class="overlay">
+                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
+                          </div>
+                          <span>05/03</span>
+                        </div>
+                      </a>
+                      <div class="info">
+                        <div class="nameFilm">
+                          <span class="ageType ageType-general">C13</span>
+                          Godzilla vs. Kong
+                        </div>
+                        <div class="infoFilm">100 phút - 6.5 IMDb</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="bg_img">
+    <div class="img"></div>
+  </section>
+
+  <section id="cine-TimetoShow" class="ml-auto mr-auto">
+    <div class="card mb-5">
+      <div class="row">
+        <div class="col-12 col-md-2 border-right">
+          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="active" id="BHDtab" data-toggle="pill" href="#BHD" role="tab" aria-controls="BHD"
+              aria-selected="true">Home</a>
+            <a class="" id="CNStab" data-toggle="pill" href="#CNS" role="tab" aria-controls="CNS"
+              aria-selected="false">Profile</a>
+            <a class="" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+              aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+            <a class="" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
+              aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+            <a class="" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+              aria-controls="v-pills-home" aria-selected="true">Home</a>
+            <a class="" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+              aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+            <a class="" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+              aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 border-right">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="BHD" role="tabpanel" aria-labelledby="BHDtab">
+              BHD</div>
+            <div class="tab-pane fade" id="CNS" role="tabpanel" aria-labelledby="CNStab">CNS
+            </div>
+            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+            </div>
+            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+            </div>
+            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+            </div>
+            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+            </div>
+            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="bg_img">
+    <div class="img"></div>
+  </section>
+
+  <section id="appBlock">
+    <div class="wrapHomeapp ml-auto mr-auto">
+      <div class="row">
+        <div class="col-12 col-md-6 d-flex align-items-center">
+          <div class="wrap">
+            <div class="appTitle">
+              <h3>Ứng dụng tiện lợi dành cho người yêu điện ảnh</h3>
+            </div>
+            <div class="appContent">
+              <p>Không chỉ đặt vé, bạn còn có thể bình luận phim, chấm điểm rạp và đổi quà hấp dẫn.</p>
+            </div>
+            <div class="appButton">
+              <button class="btn btn-danger">App miễn phí - Tải về ngay!</button>
+            </div>
+            <div class="appService">
+              TIX có hai phiên bản <a href="">iOS</a> & <a href="">Android</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="mobile-box">
+            <img class="w-100" src="./assets/images/mobile.png" alt="">
+            <div class="carousel_slick_4">
+              <div class="carousel-item">Item -1</div>
+              <div class="carousel-item">Item -1</div>
+              <div class="carousel-item">Item -1</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+
+  </footer>
+
+
+
 
 
 
