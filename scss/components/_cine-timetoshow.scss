@@ -1,3 +1,59 @@
 #cine-TimetoShow {
     max-width: 940px;
+    .card {
+        height: 705px;
+        .row {
+            height: 100%;
+            .nav {
+                a {
+                    margin: .5rem .75rem;
+                    padding-bottom: .75rem;
+                    img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+            .cineBox {
+                display: flex;
+                .img {
+                    img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+                .content {
+                    margin-left: 1rem;
+                    p:nth-child(1) {
+                        margin: 0;
+                        font-size: 14px;
+                        .bhd {
+                            color: #8bc541;
+                        }
+                        .cns {
+                            color: #df0d7a;
+                        }
+                        .beta {
+                            color: #008fe5;
+                        }
+                    }
+                    p:nth-child(2) {
+                        margin: 0;
+                        font-size: 12px;
+                        color: #949494;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                    a {
+                        color: #fb4226 !important;
+                        font-size: 12px;
+                    }
+                }
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
 }
