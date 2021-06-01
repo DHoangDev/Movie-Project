@@ -235,3 +235,14 @@
         }
     }
 }
+@media screen and (max-width:540px) {
+    #nav .nav_width{
+        padding: 26px;
+    }
+    #nav .nav_width .tab-pane .nav_review .nav-listcomment .tab_detail{
+        margin: 40px 0 0 0 ;
+    }
+    #nav .nav_width .tab-pane .nav_review .nav_input{
+        margin: 0;
+    }
+  } 

@@ -81,3 +81,24 @@ footer{
         }
     }
 }
+@media screen and (max-width:768px) {
+    footer .footer_width .footer_item a img{
+        margin-right: 12px;
+    }  
+    footer .footer_width .footer_img{
+        width: 70px ;
+
+    }
+} 
+@media screen and (max-width:540px) {
+    footer .footer_width .footer_item a img{
+        margin-right: 12px;
+    }  
+    footer .footer_width .footer_img{
+        width: 70px ;
+
+    }
+    footer .footer_width{
+        text-align: center;
+    }
+} 
