@@ -17,7 +17,9 @@
   <!-- Slick -->
   <link rel="stylesheet" href="./lib/slick/slick.css">
   <link rel="stylesheet" href="./lib/slick/slick-theme.css">
-
+  <!-- Venobox -->
+  <link rel="stylesheet" href="./lib/venobox/venobox.min.css">
+  
   <link rel="stylesheet" href="./css/style.css">
 
 </head>
@@ -25,19 +27,20 @@
 <body>
   <!-- Header -->
   <header id="header">
-    <nav class="navbar navbar-expand-md">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-md bg-light navbar-light">
+      <div class="col-2">
         <!-- Brand -->
         <a class="navbar-brand" href="#">
           <img class="w-50" src="./assets/images/web-logo.png" alt="">
         </a>
+      </div>
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <!-- Toggler/collapsibe Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Navbar links -->
+      <!-- Navbar links -->
+      <div class="col-10">
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav navbar-menu ml-auto mr-auto">
             <li class="nav-item">
@@ -86,6 +89,7 @@
           </ul>
         </div>
       </div>
+      </div>
     </nav>
   </header>
 
@@ -93,21 +97,25 @@
   <section id="carousel">
     <div class="carousel_slick_1 m-0">
       <div class="carousel_item">
-        <a href="">
+        <a class="venobox" data-vbtype="video" href="https://youtu.be/sx1ROHCmY-4">
           <img class="w-100 h-100" src="./assets/images/trang-ti-16194117174325.jpg" alt="">
-          <button><img src="./assets/images/play-video.png" alt=""></button>
+          <button>
+            <img src="./assets/images/play-video.png" alt="">
+          </button>
         </a>
         <div class="background-linear"></div>
       </div>
       <div class="carousel_item">
-        <a href="">
+        <a class="venobox" data-vbtype="video" href="https://youtu.be/UeyaR8jWl2c">
           <img class="w-100 h-100" src="./assets/images/lat-mat-48h-16177782153424.png" alt="">
-          <button><img src="./assets/images/play-video.png" alt=""></button>
+          <button>
+            <img src="./assets/images/play-video.png" alt="">
+          </button>
         </a>
         <div class="background-linear"></div>
       </div>
       <div class="carousel_item">
-        <a href="">
+        <a class="venobox" data-vbtype="video" href="https://www.youtube.com/watch?v=uqJ9u7GSaYM">
           <img class="w-100 h-100" src="./assets/images/ban-tay-diet-quy-evil-expeller-16177781815781.png" alt="">
           <button><img src="./assets/images/play-video.png" alt=""></button>
         </a>
@@ -178,10 +186,12 @@
                 <div class="row">
                   <div class="col-md-3">
                     <div class="film">
-                      <a href="">
+                      <a href="./chitiet.html">
                         <div class="film-Thumnail img img-1">
                           <div class="overlay">
-                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
+                            <button>
+                              <img class="w-100 d-block" src="./assets/images/play-video.png" alt="">
+                            </button>
                           </div>
                           <span>
                             <p>8.8</p>
@@ -205,7 +215,7 @@
                   </div>
                   <div class="col-md-3">
                     <div class="film">
-                      <a href="">
+                      <a href="./chitiet.html">
                         <div class="film-Thumnail img img-2">
                           <div class="overlay">
                             <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
@@ -232,7 +242,7 @@
                   </div>
                   <div class="col-md-3">
                     <div class="film">
-                      <a href="">
+                      <a href="./chitiet.html">
                         <div class="film-Thumnail img img-3">
                           <div class="overlay">
                             <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
@@ -259,7 +269,7 @@
                   </div>
                   <div class="col-md-3">
                     <div class="film">
-                      <a href="">
+                      <a href="./chitiet.html">
                         <div class="film-Thumnail img img-4">
                           <div class="overlay">
                             <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
@@ -1558,7 +1568,9 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./lib/slick/slick.min.js"></script>
   <script src="./javascript/slick.js"></script>
-
+   <!-- Venobox -->
+   <script src="./lib/venobox/venobox.min.js"></script>
+   <script src="./javascript/venobox.js"></script>
 </body>
 
 </html>
