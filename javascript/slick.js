@@ -16,7 +16,8 @@ $('.carousel_slick_3').slick({
 });
 $('.carousel_slick_4').slick({
     arrows: false,
-    infinite: true,
+    infinite: false,
     autoplay: true,
     autoplaySpeed: 4000,
+    slidesToShow: 1,
 });

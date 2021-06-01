@@ -1303,6 +1303,10 @@ body {
   font-size: 24px;
 }
 
+#newsBlock .row {
+  margin: 0 .5rem;
+}
+
 #newsBlock .newsContent a {
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -1491,6 +1495,26 @@ body {
 #appBlock .wrapHomeapp .mobile-box .carousel_slick_4 .slick-list .slick-track .carousel-item .img-width {
   width: 194px;
   height: 100%;
+}
+
+@media only screen and (min-width: 992px) {
+  #appBlock .text-lg-start {
+    text-align: start !important;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #appBlock .mobile-box .img-width {
+    width: 390px !important;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #appBlock .mobile-box .img-width {
+    width: 318px !important;
+    height: 100%;
+  }
 }
 
 footer {
