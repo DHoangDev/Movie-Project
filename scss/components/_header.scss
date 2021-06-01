@@ -50,9 +50,20 @@
     }
   }
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
+  #header nav .navbar-login .nav-link{
+    font-size: 11px;
+  }
   .navbar-collapse {
     display: flex;
     flex-direction: column;
+  }
+}
+@media screen and (min-width: 360px) and (max-width:540px) {
+  .navbar-light .navbar-brand img{
+    width: 32px !important;
+  }
+  #banner .banner_section .playtrailer1 img{
+    width: 54px;
   }
 }
