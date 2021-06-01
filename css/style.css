@@ -62,10 +62,13 @@ body {
   color: #fff;
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 991px) {
   #header nav .navbar-login .nav-link {
     font-size: 11px;
   }
+}
+
+@media screen and (max-width: 767px) {
   .navbar-collapse {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -144,7 +147,7 @@ body {
 }
 
 #banner .banner_detail .poster {
-  background-image: url("../../assets/images/trang-ti-16194120693380_215x318.jpg");
+  background-image: url("../assets/images/trang-ti-16194120693380_215x318.jpg");
   height: 320px;
   width: 220px;
   background-repeat: no-repeat;
@@ -708,13 +711,23 @@ body {
 }
 
 #carousel .carousel_slick_1 .slick-dots li {
-  width: 30px;
-  height: 30px;
+  width: 12px;
+  height: 12px;
 }
 
 #carousel .carousel_slick_1 .slick-dots li button::before {
-  width: 30px;
-  height: 30px;
+  width: 12px;
+  height: 12px;
+  font-family: unset;
+  content: '';
+  background: white;
+  border-radius: 50%;
+  color: unset;
+  opacity: .9;
+}
+
+#carousel .carousel_slick_1 .slick-dots li.slick-active button::before {
+  background: #fb4226;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -914,7 +927,7 @@ body {
 #timeCine .carousel_slick_2 .slick-track .row .film a .img {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
 #timeCine .carousel_slick_2 .slick-track .row .film a .img-1 {
@@ -1117,7 +1130,7 @@ body {
 #timeCine .carousel_slick_3 .slick-track .row .film a .img {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
 #timeCine .carousel_slick_3 .slick-track .row .film a .img-1 {
@@ -1252,6 +1265,12 @@ body {
 
 #timeCine .carousel_slick_3 .slick-next::before {
   display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  #timeCine {
+    display: none;
+  }
 }
 
 #bg_img {

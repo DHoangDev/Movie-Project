@@ -50,10 +50,12 @@
     }
   }
 }
-@media screen and (max-width:768px) {
+@media only screen and (max-width: 991px) {
   #header nav .navbar-login .nav-link{
     font-size: 11px;
   }
+}
+@media screen and (max-width:767px) {
   .navbar-collapse {
     display: flex;
     flex-direction: column;

@@ -96,7 +96,7 @@
                         .img {
                             background-position: center;
                             background-repeat: no-repeat;
-                            background-size: cover;
+                            background-size: 100%;
                         }
                         .img-1 {
                             background-image: url('https://s3img.vcdn.vn/mobile/123phim/2021/04/trang-ti-16194120693380_215x318.jpg'), url('/app/assets/img/default-film.webp');
@@ -269,7 +269,7 @@
                         .img {
                             background-position: center;
                             background-repeat: no-repeat;
-                            background-size: cover;
+                            background-size: 100%;
                         }
                         .img-1 {
                             background-image: url('https://s3img.vcdn.vn/mobile/123phim/2019/12/biet-doi-san-ma-chuyen-kiep-ghostbusters-afterlife-15759470166331_215x318.jpg'), url('/app/assets/img/default-film.webp');
@@ -387,5 +387,10 @@
                 display: none;
             }
         }
+    }
+}
+@media only screen and (max-width: 767px) {
+    #timeCine {
+        display: none;
     }
 }
