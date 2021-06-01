@@ -87,3 +87,13 @@
         }
     }
 }
+@media only screen and (max-width: 576px) {
+    #appBlock {
+        .mobile-box {
+            .img-width {
+                width: 194px !important;
+                height: 100%;
+            }
+        }
+    }
+}
