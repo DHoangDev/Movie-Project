@@ -2,7 +2,7 @@ body {
   overflow-y: scroll;
 }
 
-#header {
+header {
   position: fixed;
   z-index: 999;
   width: 100%;
@@ -11,14 +11,24 @@ body {
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
-#header nav {
+header nav {
   background: rgba(255, 255, 255, 0.95);
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-  padding: 0 20px;
 }
 
-#header nav .navbar-menu .nav-link {
+header nav.navbar {
+  padding: 5px 1rem;
+}
+
+header nav.navbar .navbar-toggler {
+  border: none;
+  padding: 0;
+  width: 25px;
+  height: 20px;
+}
+
+header nav.navbar .navbar-menu .nav-link {
   font-size: 14px;
   font-weight: 600;
   color: #000;
@@ -27,11 +37,11 @@ body {
   transition: all .2s;
 }
 
-#header nav .navbar-menu .nav-link:hover {
+header nav.navbar .navbar-menu .nav-link:hover {
   color: #fb4226;
 }
 
-#header nav .navbar-login .nav-link {
+header nav.navbar .navbar-login .nav-link {
   font-size: 13px;
   font-weight: 600;
   color: #9b9b9b;
@@ -39,37 +49,38 @@ body {
   line-height: 2.5;
 }
 
-#header nav .navbar-login .nav-link .nav-avatar {
+header nav.navbar .navbar-login .nav-link .nav-avatar {
   width: 30px;
   height: auto;
   border-radius: 25px;
 }
 
-#header nav .navbar-login .dropdown-menu {
+header nav.navbar .navbar-login .dropdown-menu {
   font-size: 14px;
   height: 300px;
   overflow-y: scroll;
   top: 36px;
 }
 
-#header nav .navbar-login .dropdown-menu .dropdown-item {
+header nav.navbar .navbar-login .dropdown-menu .dropdown-item {
   color: #333;
   font-weight: 600;
 }
 
-#header nav .navbar-login .dropdown-menu .dropdown-item:hover {
+header nav.navbar .navbar-login .dropdown-menu .dropdown-item:hover {
   background-color: #60c5ef;
   color: #fff;
 }
 
 @media only screen and (max-width: 991px) {
-  #header nav .navbar-login .nav-link {
+  header nav .navbar-login .nav-link {
     font-size: 11px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .navbar-collapse {
+  header nav.navbar .navbar-collapse {
+    position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -77,6 +88,49 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    top: 0;
+    right: -75%;
+    background: white;
+    height: 100vh;
+    width: 75%;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  header nav.navbar .navbar-collapse ul:nth-child(1) {
+    margin-left: 1rem;
+  }
+  header nav.navbar .navbar-collapse ul:nth-child(1) .nav-link {
+    font-size: 18px;
+  }
+  header nav.navbar .navbar-collapse ul:nth-child(2) {
+    margin: .5rem 0;
+  }
+  header nav.navbar .navbar-collapse ul:nth-child(2) .nav-link {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    padding: 0 1rem;
+    line-height: 2.5;
+    border: none !important;
+  }
+  header nav.navbar .navbar-collapse #close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  header nav.navbar .navbar-collapse #close.navbar-close {
+    border: none;
+    background: none;
+  }
+  header nav.navbar .navbar-collapse.collapsing {
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  header nav.navbar .navbar-collapse.show {
+    right: 0;
   }
 }
 
@@ -830,33 +884,28 @@ body {
   margin-top: 2rem;
 }
 
-#timeCine .carousel_slick_2 .slick-track .row {
-  max-width: 940px;
-  margin: 0;
+#timeCine .carousel_slick_2 .slick-track .item {
+  padding: 0 1rem;
 }
 
-#timeCine .carousel_slick_2 .slick-track .row .film {
-  margin-bottom: 25px;
+#timeCine .carousel_slick_2 .slick-track .row .wrap {
+  display: block;
+}
+
+#timeCine .carousel_slick_2 .slick-track .row .wrap:hover {
   cursor: pointer;
 }
 
-#timeCine .carousel_slick_2 .slick-track .row .film a {
-  text-decoration: none;
-  color: #000;
-  cursor: pointer;
+#timeCine .carousel_slick_2 .slick-track .row .box {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  border-radius: 5px;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
 }
 
-#timeCine .carousel_slick_2 .slick-track .row .film a .film-Thumnail {
-  margin-bottom: 10px;
-  position: relative;
-  border-radius: 4px;
-  padding-top: 147.90697674%;
-  overflow: hidden;
-}
-
-#timeCine .carousel_slick_2 .slick-track .row .film a .film-Thumnail .overlay {
+#timeCine .carousel_slick_2 .slick-track .row .box .overlay {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -868,11 +917,11 @@ body {
   transition: all .2s ease;
 }
 
-#timeCine .carousel_slick_2 .slick-track .row .film a .film-Thumnail .overlay:hover {
+#timeCine .carousel_slick_2 .slick-track .row .box .overlay:hover {
   opacity: 1;
 }
 
-#timeCine .carousel_slick_2 .slick-track .row .film a .film-Thumnail .overlay button {
+#timeCine .carousel_slick_2 .slick-track .row .box .overlay button {
   width: 60px;
   height: 60px;
   position: absolute;
@@ -885,11 +934,11 @@ body {
   border: none;
 }
 
-#timeCine .carousel_slick_2 .slick-track .row .film a .film-Thumnail .overlay button:hover {
+#timeCine .carousel_slick_2 .slick-track .row .box .overlay button:hover {
   opacity: .7;
 }
 
-#timeCine .carousel_slick_2 .slick-track .row .film a .film-Thumnail span {
+#timeCine .carousel_slick_2 .slick-track .row .box span {
   font-size: 16px;
   background-color: rgba(12, 27, 54, 0.8);
   border: 1px solid #1f2e46;
@@ -904,13 +953,13 @@ body {
   line-height: 1.1;
 }
 
-#timeCine .carousel_slick_2 .slick-track .row .film a .film-Thumnail span p:nth-child(1) {
+#timeCine .carousel_slick_2 .slick-track .row .box span p:nth-child(1) {
   margin: 0;
   font-weight: 600;
   font-size: 16px;
 }
 
-#timeCine .carousel_slick_2 .slick-track .row .film a .film-Thumnail span p:nth-child(2) {
+#timeCine .carousel_slick_2 .slick-track .row .box span p:nth-child(2) {
   margin: 4px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -920,73 +969,15 @@ body {
           justify-content: center;
 }
 
-#timeCine .carousel_slick_2 .slick-track .row .film a .film-Thumnail span p:nth-child(2) img {
+#timeCine .carousel_slick_2 .slick-track .row .box span p:nth-child(2) img {
   max-width: 8px;
 }
 
-#timeCine .carousel_slick_2 .slick-track .row .film a .img {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
+#timeCine .carousel_slick_2 .slick-track .row .info {
+  margin-top: .5rem;
 }
 
-#timeCine .carousel_slick_2 .slick-track .row .film a .img-1 {
-  background-image: url("https://s3img.vcdn.vn/mobile/123phim/2021/04/trang-ti-16194120693380_215x318.jpg"), url("/app/assets/img/default-film.webp");
-}
-
-#timeCine .carousel_slick_2 .slick-track .row .film a .img-2 {
-  background-image: url("https://s3img.vcdn.vn/mobile/123phim/2021/04/lat-mat-48h-16176188609123_215x318.png"), url("/app/assets/img/default-film.webp");
-}
-
-#timeCine .carousel_slick_2 .slick-track .row .film a .img-3 {
-  background-image: url("https://s3img.vcdn.vn/mobile/123phim/2021/03/thien-than-ho-menh-16157907251398_215x318.jpg"), url("/app/assets/img/default-film.webp");
-}
-
-#timeCine .carousel_slick_2 .slick-track .row .film a .img-4 {
-  background-image: url("https://s3img.vcdn.vn/mobile/123phim/2021/04/detective-conan-scarlet-bullet-tham-tu-lung-danh-conan-vien-dan-do-p-16185623740090_215x318.png"), url("/app/assets/img/default-film.webp");
-}
-
-#timeCine .carousel_slick_2 .slick-track .row .film a .img-5 {
-  background-image: url("https://s3img.vcdn.vn/mobile/123phim/2021/03/nguoi-nhan-ban-seobok-c18-16170933054901_215x318.jpg"), url("/app/assets/img/default-film.webp");
-}
-
-#timeCine .carousel_slick_2 .slick-track .row .film a .img-6 {
-  background-image: url("https://s3img.vcdn.vn/mobile/123phim/2021/03/ban-tay-diet-quy-evil-expeller-c16-16167437811994_215x318.png"), url("/app/assets/img/default-film.webp");
-}
-
-#timeCine .carousel_slick_2 .slick-track .row .film a .img-7 {
-  background-image: url("https://s3img.vcdn.vn/mobile/123phim/2021/04/ke-vo-danh-nobody-c18-16177813592209_215x318.png"), url("/app/assets/img/default-film.webp");
-}
-
-#timeCine .carousel_slick_2 .slick-track .row .film a .img-8 {
-  background-image: url("https://s3img.vcdn.vn/mobile/123phim/2021/05/hung-than-trang-great-white-c13-16199525115620_215x318.png"), url("/app/assets/img/default-film.webp");
-}
-
-#timeCine .carousel_slick_2 .slick-track .row .film a .img-9 {
-  background-image: url("https://s3img.vcdn.vn/mobile/123phim/2021/05/chien-binh-cuoi-cung-cuoi-nguon-cua-quy-the-last-warrior-root-of-evil-c13-16199511224567_215x318.png"), url("/app/assets/img/default-film.webp");
-}
-
-#timeCine .carousel_slick_2 .slick-track .row .film a .img-10 {
-  background-image: url("https://s3img.vcdn.vn/mobile/123phim/2021/04/ong-nhi-phieu-luu-ky-giai-cuu-cong-chua-kien-maya-the-bee-3-the-golden-orb-p-16177793756407_215x318.png"), url("/app/assets/img/default-film.webp");
-}
-
-#timeCine .carousel_slick_2 .slick-track .row .film a .img-11 {
-  background-image: url("https://s3img.vcdn.vn/mobile/123phim/2021/04/nhan-doi-tinh-yeu-double-party-c13-16188292910862_215x318.png"), url("/app/assets/img/default-film.webp");
-}
-
-#timeCine .carousel_slick_2 .slick-track .row .film a .img-12 {
-  background-image: url("https://s3img.vcdn.vn/mobile/123phim/2021/04/trum-cuoi-sieu-dang-bosslevel-c18-16188999396703_215x318.png"), url("/app/assets/img/default-film.webp");
-}
-
-#timeCine .carousel_slick_2 .slick-track .row .film a .img-13 {
-  background-image: url("https://s3img.vcdn.vn/mobile/123phim/2021/04/the-hypnosis-con-lac-ta-thuat-c18-16185613453118_215x318.png"), url("/app/assets/img/default-film.webp");
-}
-
-#timeCine .carousel_slick_2 .slick-track .row .film a .img-14 {
-  background-image: url("https://s3img.vcdn.vn/mobile/123phim/2021/03/godzilla-vs-kong-16150074733397_215x318.jpg"), url("/app/assets/img/default-film.webp");
-}
-
-#timeCine .carousel_slick_2 .slick-track .row .film .info .nameFilm {
+#timeCine .carousel_slick_2 .slick-track .row .info .nameFilm {
   height: 42px;
   max-height: 42px;
   font-size: 15px;
@@ -1000,7 +991,7 @@ body {
   -webkit-box-orient: vertical;
 }
 
-#timeCine .carousel_slick_2 .slick-track .row .film .info .nameFilm .ageType {
+#timeCine .carousel_slick_2 .slick-track .row .info .nameFilm .ageType {
   font-size: 14px;
   background-color: #fb4226;
   border-radius: 4px;
@@ -1013,11 +1004,11 @@ body {
   font-weight: 600;
 }
 
-#timeCine .carousel_slick_2 .slick-track .row .film .info .nameFilm .ageType-general {
+#timeCine .carousel_slick_2 .slick-track .row .info .nameFilm .ageType-general {
   background-color: #00ac4d;
 }
 
-#timeCine .carousel_slick_2 .slick-track .row .film .info .infoFilm {
+#timeCine .carousel_slick_2 .slick-track .row .info .infoFilm {
   font-size: 13px;
   color: #4a4a4a;
   margin-bottom: 15px;
@@ -1056,33 +1047,32 @@ body {
   display: none;
 }
 
-#timeCine .carousel_slick_3 .slick-track .row {
-  max-width: 940px;
-  margin: 0;
+#timeCine .carousel_slick_3 {
+  margin-top: 2rem;
 }
 
-#timeCine .carousel_slick_3 .slick-track .row .film {
-  margin-bottom: 25px;
+#timeCine .carousel_slick_3 .slick-track .item {
+  padding: 0 1rem;
+}
+
+#timeCine .carousel_slick_3 .slick-track .row .wrap {
+  display: block;
+}
+
+#timeCine .carousel_slick_3 .slick-track .row .wrap:hover {
   cursor: pointer;
 }
 
-#timeCine .carousel_slick_3 .slick-track .row .film a {
-  text-decoration: none;
-  color: #000;
-  cursor: pointer;
+#timeCine .carousel_slick_3 .slick-track .row .box {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  border-radius: 5px;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
 }
 
-#timeCine .carousel_slick_3 .slick-track .row .film a .film-Thumnail {
-  margin-bottom: 10px;
-  position: relative;
-  border-radius: 4px;
-  padding-top: 147.90697674%;
-  overflow: hidden;
-}
-
-#timeCine .carousel_slick_3 .slick-track .row .film a .film-Thumnail .overlay {
+#timeCine .carousel_slick_3 .slick-track .row .box .overlay {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1094,11 +1084,11 @@ body {
   transition: all .2s ease;
 }
 
-#timeCine .carousel_slick_3 .slick-track .row .film a .film-Thumnail .overlay:hover {
+#timeCine .carousel_slick_3 .slick-track .row .box .overlay:hover {
   opacity: 1;
 }
 
-#timeCine .carousel_slick_3 .slick-track .row .film a .film-Thumnail .overlay button {
+#timeCine .carousel_slick_3 .slick-track .row .box .overlay button {
   width: 60px;
   height: 60px;
   position: absolute;
@@ -1111,11 +1101,11 @@ body {
   border: none;
 }
 
-#timeCine .carousel_slick_3 .slick-track .row .film a .film-Thumnail .overlay button:hover {
+#timeCine .carousel_slick_3 .slick-track .row .box .overlay button:hover {
   opacity: .7;
 }
 
-#timeCine .carousel_slick_3 .slick-track .row .film a .film-Thumnail span {
+#timeCine .carousel_slick_3 .slick-track .row .box span {
   font-size: 16px;
   background-color: rgba(12, 27, 54, 0.8);
   border: 1px solid #1f2e46;
@@ -1127,77 +1117,11 @@ body {
   color: #fff;
 }
 
-#timeCine .carousel_slick_3 .slick-track .row .film a .img {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
+#timeCine .carousel_slick_3 .slick-track .row .info {
+  margin-top: .5rem;
 }
 
-#timeCine .carousel_slick_3 .slick-track .row .film a .img-1 {
-  background-image: url("https://s3img.vcdn.vn/mobile/123phim/2019/12/biet-doi-san-ma-chuyen-kiep-ghostbusters-afterlife-15759470166331_215x318.jpg"), url("/app/assets/img/default-film.webp");
-}
-
-#timeCine .carousel_slick_3 .slick-track .row .film a .img-2 {
-  background-image: url("https://s3img.vcdn.vn/mobile/123phim/2020/02/em-va-trinh-15813267048692_215x318.jpg"), url("/app/assets/img/default-film.webp");
-}
-
-#timeCine .carousel_slick_3 .slick-track .row .film a .img-3 {
-  background-image: url("https://s3img.vcdn.vn/mobile/123phim/2020/01/fast-furious-9-15803709020861_215x318.jpg"), url("/app/assets/img/default-film.webp");
-}
-
-#timeCine .carousel_slick_3 .slick-track .row .film a .img-4 {
-  background-image: url("https://s3img.vcdn.vn/mobile/123phim/2020/04/ta-nang-phan-dung-15862384755700_215x318.jpg"), url("/app/assets/img/default-film.webp");
-}
-
-#timeCine .carousel_slick_3 .slick-track .row .film a .img-5 {
-  background-image: url("https://s3img.vcdn.vn/mobile/123phim/2021/03/1990-c16-16170969832613_215x318.jpg"), url("/app/assets/img/default-film.webp");
-}
-
-#timeCine .carousel_slick_3 .slick-track .row .film a .img-6 {
-  background-image: url("https://s3img.vcdn.vn/mobile/123phim/2019/08/shang-chi-and-the-legend-of-the-ten-rings-15668741464229_215x318.jpg"), url("/app/assets/img/default-film.webp");
-}
-
-#timeCine .carousel_slick_3 .slick-track .row .film a .img-7 {
-  background-image: url("https://s3img.vcdn.vn/mobile/123phim/2021/04/dua-be-i-16188328093041_215x318.png"), url("/app/assets/img/default-film.webp");
-}
-
-#timeCine .carousel_slick_3 .slick-track .row .film a .img-8 {
-  background-image: url("https://s3img.vcdn.vn/mobile/123phim/2020/02/john-wick-chapter-4-15827770304921_215x318.jpg"), url("/app/assets/img/default-film.webp");
-}
-
-#timeCine .carousel_slick_3 .slick-track .row .film a .img-9 {
-  background-image: url("https://s3img.vcdn.vn/mobile/123phim/2020/02/the-matrix-4-15827771560629_215x318.jpg"), url("/app/assets/img/default-film.webp");
-}
-
-#timeCine .carousel_slick_3 .slick-track .row .film a .img-10 {
-  background-image: url("https://s3img.vcdn.vn/mobile/123phim/2021/04/cruella-16182123467884_215x318.png"), url("/app/assets/img/default-film.webp");
-}
-
-#timeCine .carousel_slick_3 .slick-track .row .film a .img-11 {
-  background-image: url("https://s3img.vcdn.vn/mobile/123phim/2021/03/chu-ngua-bat-kham-spirit-p-16171851912283_215x318.png"), url("/app/assets/img/default-film.webp");
-}
-
-#timeCine .carousel_slick_3 .slick-track .row .film a .img-12 {
-  background-image: url("https://s3img.vcdn.vn/mobile/123phim/2019/11/am-anh-kinh-hoang-3-the-conjuring-3-c18-15742352934530_215x318.jpg"), url("/app/assets/img/default-film.webp");
-}
-
-#timeCine .carousel_slick_3 .slick-track .row .film a .img-13 {
-  background-image: url("https://s3img.vcdn.vn/mobile/123phim/2020/02/jurassic-world-dominion-15827788277771_215x318.jpg"), url("/app/assets/img/default-film.webp");
-}
-
-#timeCine .carousel_slick_3 .slick-track .row .film a .img-14 {
-  background-image: url("https://s3img.vcdn.vn/mobile/123phim/2020/01/in-the-heights-15779380081932_215x318.jpg"), url("/app/assets/img/default-film.webp");
-}
-
-#timeCine .carousel_slick_3 .slick-track .row .film a .img-15 {
-  background-image: url("https://s3img.vcdn.vn/mobile/123phim/2019/11/venom-2-15740591875202_215x318.jpg"), url("/app/assets/img/default-film.webp");
-}
-
-#timeCine .carousel_slick_3 .slick-track .row .film a .img-16 {
-  background-image: url("https://s3img.vcdn.vn/mobile/123phim/2020/02/minions-su-troi-day-cua-gru-15809552091851_215x318.jpg"), url("/app/assets/img/default-film.webp");
-}
-
-#timeCine .carousel_slick_3 .slick-track .row .film .info .nameFilm {
+#timeCine .carousel_slick_3 .slick-track .row .info .nameFilm {
   height: 42px;
   max-height: 42px;
   font-size: 15px;
@@ -1211,7 +1135,7 @@ body {
   -webkit-box-orient: vertical;
 }
 
-#timeCine .carousel_slick_3 .slick-track .row .film .info .nameFilm .ageType {
+#timeCine .carousel_slick_3 .slick-track .row .info .nameFilm .ageType {
   font-size: 14px;
   background-color: #fb4226;
   border-radius: 4px;
@@ -1224,11 +1148,11 @@ body {
   font-weight: 600;
 }
 
-#timeCine .carousel_slick_3 .slick-track .row .film .info .nameFilm .ageType-general {
+#timeCine .carousel_slick_3 .slick-track .row .info .nameFilm .ageType-general {
   background-color: #00ac4d;
 }
 
-#timeCine .carousel_slick_3 .slick-track .row .film .info .infoFilm {
+#timeCine .carousel_slick_3 .slick-track .row .info .infoFilm {
   font-size: 13px;
   color: #4a4a4a;
   margin-bottom: 15px;
@@ -1265,12 +1189,6 @@ body {
 
 #timeCine .carousel_slick_3 .slick-next::before {
   display: none;
-}
-
-@media only screen and (max-width: 767px) {
-  #timeCine {
-    display: none;
-  }
 }
 
 #bg_img {
