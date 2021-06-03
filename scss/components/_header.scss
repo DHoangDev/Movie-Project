@@ -34,6 +34,14 @@ header {
           color: #9b9b9b;
           padding: 0 1rem;
           line-height: 2.5;
+          i {
+            margin-right: .5rem;
+          }
+          &.dropdown-toggle {
+            &::after {
+              margin-left: .5rem;
+            }
+          }
           .nav-avatar {
             width: 30px;
             height: auto;
