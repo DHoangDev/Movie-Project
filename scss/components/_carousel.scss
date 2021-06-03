@@ -6,10 +6,8 @@
         position: absolute;
         z-index: 0;
         width: 100%;
-        position: absolute;
         top: 0;
         left: 0;
-        bottom: 0;
         height: 100%;
         background-color: #e8e8e8;
         .slick-list {
@@ -112,6 +110,15 @@
                         height: 100%;
                     }
                 }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    #carousel {
+        .carousel_slick_1 {
+            .slick-dots {
+                bottom: 25px;
             }
         }
     }

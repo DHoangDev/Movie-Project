@@ -11,6 +11,14 @@ $('.carousel_slick_2').slick({
     autoplaySpeed: 4000,
     slidesToShow: 1,
     slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                arrows: false,
+            }
+        },
+    ]
 });
 $('.carousel_slick_3').slick({
     infinite: true,
@@ -18,6 +26,14 @@ $('.carousel_slick_3').slick({
     autoplaySpeed: 4000,
     slidesToShow: 1,
     slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                arrows: false,
+            }
+        },
+    ]
 });
 $('.carousel_slick_4').slick({
     arrows: false,

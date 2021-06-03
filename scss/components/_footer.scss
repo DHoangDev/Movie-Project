@@ -3,7 +3,11 @@ footer{
     padding-top: 20px;
     padding-bottom: 20px;
     color: #949494;
-    .footer_width{
+    .wrap-width {
+        width: 100%;
+        padding: 0 15px;
+    }
+    &.footer_width{
         max-width: 940px;
         margin: auto;
         .footer_title{
