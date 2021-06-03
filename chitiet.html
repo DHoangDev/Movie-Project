@@ -22,69 +22,73 @@
 <body>
   <!-- Header -->
   <header>
-    <nav class="navbar navbar-expand-md bg-light navbar-light">
-      <div class="col-2">
-        <!-- Brand -->
-        <a class="navbar-brand" href="#">
-          <img class="w-50" src="./assets/images/web-logo.png" alt="">
-        </a>
-      </div>
+    <nav class="navbar navbar-expand-md">
+
+      <!-- Brand -->
+      <a class="navbar-brand p-0" href="#">
+        <img class="w-50" src="./assets/images/web-logo.png" alt="">
+      </a>
+
       <!-- Toggler/collapsibe Button -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
+        <img class=" w-100" src="./assets/images/menu-options.png" alt="">
       </button>
 
       <!-- Navbar links -->
-      <div class="col-10">
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav navbar-menu ml-auto mr-auto order-2 order-lg-1">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Lịch Chiếu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Cụm rạp</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Tin Tức</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Ứng dụng</a>
-          </ul>
 
-          <ul class="navbar-nav align-items-center navbar-login order-1 order-lg-2">
-            <li class="nav-item">
-              <a class="nav-link border-right" href="#"><img class="nav-avatar mr-2" src="./assets/images/avatar.png"
-                  alt="">Đăng
-                Nhập</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-map-marker-alt"></i> Hồ Chí Minh
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Hồ Chí Minh</a>
-                <a class="dropdown-item" href="#">Hà Nội</a>
-                <a class="dropdown-item" href="#">Đà Nẵng</a>
-                <a class="dropdown-item" href="#">Hải Phòng</a>
-                <a class="dropdown-item" href="#">Hồ Chí Minh</a>
-                <a class="dropdown-item" href="#">Hà Nội</a>
-                <a class="dropdown-item" href="#">Đà Nẵng</a>
-                <a class="dropdown-item" href="#">Hải Phòng</a>
-                <a class="dropdown-item" href="#">Hồ Chí Minh</a>
-                <a class="dropdown-item" href="#">Hà Nội</a>
-                <a class="dropdown-item" href="#">Đà Nẵng</a>
-                <a class="dropdown-item" href="#">Hải Phòng</a>
-                <a class="dropdown-item" href="#">Hồ Chí Minh</a>
-                <a class="dropdown-item" href="#">Hà Nội</a>
-                <a class="dropdown-item" href="#">Đà Nẵng</a>
-                <a class="dropdown-item" href="#">Hải Phòng</a>
-              </div>
-            </li>
-          </ul>
-        </div>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav navbar-menu ml-md-auto mr-md-auto order-2 order-md-1">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Lịch Chiếu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Cụm rạp</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tin Tức</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ứng dụng</a>
+        </ul>
+
+        <ul class="navbar-nav navbar-login align-items-center order-1 order-md-2">
+          <li class="nav-item">
+            <a class="nav-link border-right" href="#"><img class="nav-avatar mr-2" src="./assets/images/avatar.png"
+                alt="">Đăng
+              Nhập</a>
+          </li>
+          <li class="nav-item dropdown d-none d-md-block">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <i class="fas fa-map-marker-alt"></i> Hồ Chí Minh
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Hồ Chí Minh</a>
+              <a class="dropdown-item" href="#">Hà Nội</a>
+              <a class="dropdown-item" href="#">Đà Nẵng</a>
+              <a class="dropdown-item" href="#">Hải Phòng</a>
+              <a class="dropdown-item" href="#">Hồ Chí Minh</a>
+              <a class="dropdown-item" href="#">Hà Nội</a>
+              <a class="dropdown-item" href="#">Đà Nẵng</a>
+              <a class="dropdown-item" href="#">Hải Phòng</a>
+              <a class="dropdown-item" href="#">Hồ Chí Minh</a>
+              <a class="dropdown-item" href="#">Hà Nội</a>
+              <a class="dropdown-item" href="#">Đà Nẵng</a>
+              <a class="dropdown-item" href="#">Hải Phòng</a>
+              <a class="dropdown-item" href="#">Hồ Chí Minh</a>
+              <a class="dropdown-item" href="#">Hà Nội</a>
+              <a class="dropdown-item" href="#">Đà Nẵng</a>
+              <a class="dropdown-item" href="#">Hải Phòng</a>
+            </div>
+          </li>
+        </ul>
+
+        <button class="navbar-toggler navbar-close" id="close" type="button" data-toggle="collapse"
+          data-target="#collapsibleNavbar">
+          <i class="fas fa-chevron-right"></i>
+        </button>
       </div>
-      </div>
+
     </nav>
   </header>
 
