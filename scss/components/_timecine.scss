@@ -22,163 +22,114 @@
     .carousel_slick_2 {
         margin-top: 2rem;
         .slick-track {
+            .item {
+                padding: 0 1rem;
+            }
             .row {
-                max-width: 940px;
-                margin: 0;
-                .film {
-                    margin-bottom: 25px;
-                    cursor: pointer;
-                    a {
-                        text-decoration: none;
-                        color: #000;
+                .wrap {
+                    display: block;
+                    &:hover {
                         cursor: pointer;
+                    }
+                }
+                .box {
+                    position: relative;
+                    overflow: hidden;
+                    display: block;
+                    border-radius: 5px;
+                    transition: all .2s ease;
+                    .overlay {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        background: linear-gradient(to top,#000,transparent 100%);
+                        top: 0;
+                        opacity: 0;
                         transition: all .2s ease;
-                        .film-Thumnail {
-                            margin-bottom: 10px;
-                            position: relative;
-                            border-radius: 4px;
-                            padding-top: 147.90697674%;
-                            overflow: hidden;
-                            .overlay {
-                                position: absolute;
-                                width: 100%;
-                                height: 100%;
-                                background: linear-gradient(to top,#000,transparent 100%);
-                                top: 0;
-                                opacity: 0;
-                                transition: all .2s ease;
-                                &:hover {
-                                    opacity: 1;
-                                }
-                                button {
-                                    width: 60px;
-                                    height: 60px;
-                                    position: absolute;
-                                    top: 50%;
-                                    left: 50%;
-                                    transform: translate(-50%,-50%);
-                                    z-index: 3;
-                                    background: 0 0;
-                                    border: none;
-                                    &:hover {
-                                        opacity: .7;
-                                    }
-                                }
+                        &:hover {
+                            opacity: 1;
+                        }
+                        button {
+                            width: 60px;
+                            height: 60px;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                            z-index: 3;
+                            background: 0 0;
+                            border: none;
+                            &:hover {
+                                opacity: .7;
                             }
-                            span {
-                                font-size: 16px;
-                                background-color: rgba(12,27,54,.8);
-                                border: 1px solid #1f2e46;
-                                border-radius: 4px;
-                                padding: 2px;
-                                position: absolute;
-                                top: 12px;
-                                right: 12px;
-                                color: #fff;
-                                width: 54px;
-                                text-align: center;
-                                line-height: 1.1;
-                                p:nth-child(1) {
-                                    margin: 0;
-                                    font-weight: 600;
-                                    font-size: 16px;
-                                }
-                                p:nth-child(2) {
-                                    margin: 4px 0;
-                                    display: flex;
-                                    justify-content: center;
-                                    img {
-                                        max-width: 8px;
-                                    }
-                                }
-                            }
-                        }
-                        .img {
-                            background-position: center;
-                            background-repeat: no-repeat;
-                            background-size: cover;
-                        }
-                        .img-1 {
-                            background-image: url('https://s3img.vcdn.vn/mobile/123phim/2021/04/trang-ti-16194120693380_215x318.jpg'), url('/app/assets/img/default-film.webp');
-                        }
-                        .img-2 {
-                            background-image: url('https://s3img.vcdn.vn/mobile/123phim/2021/04/lat-mat-48h-16176188609123_215x318.png'), url('/app/assets/img/default-film.webp');
-                        }
-                        .img-3 {
-                            background-image: url('https://s3img.vcdn.vn/mobile/123phim/2021/03/thien-than-ho-menh-16157907251398_215x318.jpg'), url('/app/assets/img/default-film.webp');
-                        }
-                        .img-4 {
-                            background-image: url('https://s3img.vcdn.vn/mobile/123phim/2021/04/detective-conan-scarlet-bullet-tham-tu-lung-danh-conan-vien-dan-do-p-16185623740090_215x318.png'), url('/app/assets/img/default-film.webp');
-                        }
-                        .img-5 {
-                            background-image: url('https://s3img.vcdn.vn/mobile/123phim/2021/03/nguoi-nhan-ban-seobok-c18-16170933054901_215x318.jpg'), url('/app/assets/img/default-film.webp');
-                        }
-                        .img-6 {
-                            background-image: url('https://s3img.vcdn.vn/mobile/123phim/2021/03/ban-tay-diet-quy-evil-expeller-c16-16167437811994_215x318.png'), url('/app/assets/img/default-film.webp');
-                        }
-                        .img-7 {
-                            background-image: url('https://s3img.vcdn.vn/mobile/123phim/2021/04/ke-vo-danh-nobody-c18-16177813592209_215x318.png'), url('/app/assets/img/default-film.webp');
-                        }
-                        .img-8 {
-                            background-image: url('https://s3img.vcdn.vn/mobile/123phim/2021/05/hung-than-trang-great-white-c13-16199525115620_215x318.png'), url('/app/assets/img/default-film.webp');
-                        }
-                        .img-9 {
-                            background-image: url('https://s3img.vcdn.vn/mobile/123phim/2021/05/chien-binh-cuoi-cung-cuoi-nguon-cua-quy-the-last-warrior-root-of-evil-c13-16199511224567_215x318.png'), url('/app/assets/img/default-film.webp');
-                        }
-                        .img-10 {
-                            background-image: url('https://s3img.vcdn.vn/mobile/123phim/2021/04/ong-nhi-phieu-luu-ky-giai-cuu-cong-chua-kien-maya-the-bee-3-the-golden-orb-p-16177793756407_215x318.png'), url('/app/assets/img/default-film.webp');
-                        }
-                        .img-11 {
-                            background-image: url('https://s3img.vcdn.vn/mobile/123phim/2021/04/nhan-doi-tinh-yeu-double-party-c13-16188292910862_215x318.png'), url('/app/assets/img/default-film.webp');
-                        }
-                        .img-12 {
-                            background-image: url('https://s3img.vcdn.vn/mobile/123phim/2021/04/trum-cuoi-sieu-dang-bosslevel-c18-16188999396703_215x318.png'), url('/app/assets/img/default-film.webp');
-                        }
-                        .img-13 {
-                            background-image: url('https://s3img.vcdn.vn/mobile/123phim/2021/04/the-hypnosis-con-lac-ta-thuat-c18-16185613453118_215x318.png'), url('/app/assets/img/default-film.webp');
-                        }
-                        .img-14 {
-                            background-image: url('https://s3img.vcdn.vn/mobile/123phim/2021/03/godzilla-vs-kong-16150074733397_215x318.jpg'), url('/app/assets/img/default-film.webp');
                         }
                     }
-                    .info {
-                        .nameFilm {
-                            height: 42px;
-                            max-height: 42px;
-                            font-size: 15px;
+                    span {
+                        font-size: 16px;
+                        background-color: rgba(12,27,54,.8);
+                        border: 1px solid #1f2e46;
+                        border-radius: 4px;
+                        padding: 2px;
+                        position: absolute;
+                        top: 12px;
+                        right: 12px;
+                        color: #fff;
+                        width: 54px;
+                        text-align: center;
+                        line-height: 1.1;
+                        p:nth-child(1) {
+                            margin: 0;
                             font-weight: 600;
-                            color: #000;
-                            line-height: 20px;
-                            margin-bottom: 0;
-                            overflow: hidden;
-                            display: -webkit-box;
-                            -webkit-line-clamp: 2;
-                            -webkit-box-orient: vertical;
-                            .ageType {
-                                font-size: 14px;
-                                background-color: #fb4226;
-                                border-radius: 4px;
-                                padding: 0 5px;
-                                color: #fff;
-                                min-width: 33px;
-                                text-align: center;
-                                display: inline-block;
-                                margin-right: 2px;
-                                font-weight: 600;
-                            }
-                            .ageType-general {
-                                background-color: #00ac4d;
-                            }
+                            font-size: 16px;
                         }
-                        .infoFilm {
-                            font-size: 13px;
-                            color: #4a4a4a;
-                            margin-bottom: 15px;
-                            margin-top: 8px;
+                        p:nth-child(2) {
+                            margin: 4px 0;
+                            display: flex;
+                            justify-content: center;
+                            img {
+                                max-width: 8px;
+                            }
                         }
                     }
                 }
-            }
+                .info {
+                    margin-top: .5rem;
+                    .nameFilm {
+                        height: 42px;
+                        max-height: 42px;
+                        font-size: 15px;
+                        font-weight: 600;
+                        color: #000;
+                        line-height: 20px;
+                        margin-bottom: 0;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        .ageType {
+                            font-size: 14px;
+                            background-color: #fb4226;
+                            border-radius: 4px;
+                            padding: 0 5px;
+                            color: #fff;
+                            min-width: 33px;
+                            text-align: center;
+                            display: inline-block;
+                            margin-right: 2px;
+                            font-weight: 600;
+                        }
+                        .ageType-general {
+                            background-color: #00ac4d;
+                        }
+                    }
+                    .infoFilm {
+                        font-size: 13px;
+                        color: #4a4a4a;
+                        margin-bottom: 15px;
+                        margin-top: 8px;
+                    }
+                }
+            }         
         }
         .slick-prev {
             left: -45px;
@@ -210,154 +161,100 @@
         }
     }
     .carousel_slick_3 {
+        margin-top: 2rem;
         .slick-track {
+            .item {
+                padding: 0 1rem;
+            }
             .row {
-                max-width: 940px;
-                margin: 0;
-                .film {
-                    margin-bottom: 25px;
-                    cursor: pointer;
-                    a {
-                        text-decoration: none;
-                        color: #000;
+                .wrap {
+                    display: block;
+                    &:hover {
                         cursor: pointer;
-                        transition: all .2s ease;
-                        .film-Thumnail {
-                            margin-bottom: 10px;
-                            position: relative;
-                            border-radius: 4px;
-                            padding-top: 147.90697674%;
-                            overflow: hidden;
-                            .overlay {
-                                position: absolute;
-                                width: 100%;
-                                height: 100%;
-                                background: linear-gradient(to top,#000,transparent 100%);
-                                top: 0;
-                                opacity: 0;
-                                transition: all .2s ease;
-                                &:hover {
-                                    opacity: 1;
-                                }
-                                button {
-                                    width: 60px;
-                                    height: 60px;
-                                    position: absolute;
-                                    top: 50%;
-                                    left: 50%;
-                                    transform: translate(-50%,-50%);
-                                    z-index: 3;
-                                    background: 0 0;
-                                    border: none;
-                                    &:hover {
-                                        opacity: .7;
-                                    }
-                                }
-                            }
-                            span {
-                                font-size: 16px;
-                                background-color: rgba(12,27,54,.8);
-                                border: 1px solid #1f2e46;
-                                border-radius: 4px;
-                                padding: 2px;
-                                position: absolute;
-                                bottom: 12px;
-                                right: 12px;
-                                color: #fff;
-                            }
-                        }
-                        .img {
-                            background-position: center;
-                            background-repeat: no-repeat;
-                            background-size: cover;
-                        }
-                        .img-1 {
-                            background-image: url('https://s3img.vcdn.vn/mobile/123phim/2019/12/biet-doi-san-ma-chuyen-kiep-ghostbusters-afterlife-15759470166331_215x318.jpg'), url('/app/assets/img/default-film.webp');
-                        }
-                        .img-2 {
-                            background-image: url('https://s3img.vcdn.vn/mobile/123phim/2020/02/em-va-trinh-15813267048692_215x318.jpg'), url('/app/assets/img/default-film.webp');
-                        }
-                        .img-3 {
-                            background-image: url('https://s3img.vcdn.vn/mobile/123phim/2020/01/fast-furious-9-15803709020861_215x318.jpg'), url('/app/assets/img/default-film.webp');
-                        }
-                        .img-4 {
-                            background-image: url('https://s3img.vcdn.vn/mobile/123phim/2020/04/ta-nang-phan-dung-15862384755700_215x318.jpg'), url('/app/assets/img/default-film.webp');
-                        }
-                        .img-5 {
-                            background-image: url('https://s3img.vcdn.vn/mobile/123phim/2021/03/1990-c16-16170969832613_215x318.jpg'), url('/app/assets/img/default-film.webp');
-                        }
-                        .img-6 {
-                            background-image: url('https://s3img.vcdn.vn/mobile/123phim/2019/08/shang-chi-and-the-legend-of-the-ten-rings-15668741464229_215x318.jpg'), url('/app/assets/img/default-film.webp');
-                        }
-                        .img-7 {
-                            background-image: url('https://s3img.vcdn.vn/mobile/123phim/2021/04/dua-be-i-16188328093041_215x318.png'), url('/app/assets/img/default-film.webp');
-                        }
-                        .img-8 {
-                            background-image: url('https://s3img.vcdn.vn/mobile/123phim/2020/02/john-wick-chapter-4-15827770304921_215x318.jpg'), url('/app/assets/img/default-film.webp');
-                        }
-                        .img-9 {
-                            background-image: url('https://s3img.vcdn.vn/mobile/123phim/2020/02/the-matrix-4-15827771560629_215x318.jpg'), url('/app/assets/img/default-film.webp');
-                        }
-                        .img-10 {
-                            background-image: url('https://s3img.vcdn.vn/mobile/123phim/2021/04/cruella-16182123467884_215x318.png'), url('/app/assets/img/default-film.webp');
-                        }
-                        .img-11 {
-                            background-image: url('https://s3img.vcdn.vn/mobile/123phim/2021/03/chu-ngua-bat-kham-spirit-p-16171851912283_215x318.png'), url('/app/assets/img/default-film.webp');
-                        }
-                        .img-12 {
-                            background-image: url('https://s3img.vcdn.vn/mobile/123phim/2019/11/am-anh-kinh-hoang-3-the-conjuring-3-c18-15742352934530_215x318.jpg'), url('/app/assets/img/default-film.webp');
-                        }
-                        .img-13 {
-                            background-image: url('https://s3img.vcdn.vn/mobile/123phim/2020/02/jurassic-world-dominion-15827788277771_215x318.jpg'), url('/app/assets/img/default-film.webp');
-                        }
-                        .img-14 {
-                            background-image: url('https://s3img.vcdn.vn/mobile/123phim/2020/01/in-the-heights-15779380081932_215x318.jpg'), url('/app/assets/img/default-film.webp');
-                        }
-                        .img-15 {
-                            background-image: url('https://s3img.vcdn.vn/mobile/123phim/2019/11/venom-2-15740591875202_215x318.jpg'), url('/app/assets/img/default-film.webp');
-                        }
-                        .img-16 {
-                            background-image: url('https://s3img.vcdn.vn/mobile/123phim/2020/02/minions-su-troi-day-cua-gru-15809552091851_215x318.jpg'), url('/app/assets/img/default-film.webp');
-                        }
-                    }
-                    .info {
-                        .nameFilm {
-                            height: 42px;
-                            max-height: 42px;
-                            font-size: 15px;
-                            font-weight: 600;
-                            color: #000;
-                            line-height: 20px;
-                            margin-bottom: 0;
-                            overflow: hidden;
-                            display: -webkit-box;
-                            -webkit-line-clamp: 2;
-                            -webkit-box-orient: vertical;
-                            .ageType {
-                                font-size: 14px;
-                                background-color: #fb4226;
-                                border-radius: 4px;
-                                padding: 0 5px;
-                                color: #fff;
-                                min-width: 33px;
-                                text-align: center;
-                                display: inline-block;
-                                margin-right: 2px;
-                                font-weight: 600;
-                            }
-                            .ageType-general {
-                                background-color: #00ac4d;
-                            }
-                        }
-                        .infoFilm {
-                            font-size: 13px;
-                            color: #4a4a4a;
-                            margin-bottom: 15px;
-                            margin-top: 8px;
-                        }
                     }
                 }
-            }
+                .box {
+                    position: relative;
+                    overflow: hidden;
+                    display: block;
+                    border-radius: 5px;
+                    transition: all .2s ease;
+                    .overlay {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        background: linear-gradient(to top,#000,transparent 100%);
+                        top: 0;
+                        opacity: 0;
+                        transition: all .2s ease;
+                        &:hover {
+                            opacity: 1;
+                        }
+                        button {
+                            width: 60px;
+                            height: 60px;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                            z-index: 3;
+                            background: 0 0;
+                            border: none;
+                            &:hover {
+                                opacity: .7;
+                            }
+                        }
+                    }
+                    span {
+                        font-size: 16px;
+                        background-color: rgba(12,27,54,.8);
+                        border: 1px solid #1f2e46;
+                        border-radius: 4px;
+                        padding: 2px;
+                        position: absolute;
+                        bottom: 12px;
+                        right: 12px;
+                        color: #fff;
+                    }
+                }
+                .info {
+                    margin-top: .5rem;
+                    .nameFilm {
+                        height: 42px;
+                        max-height: 42px;
+                        font-size: 15px;
+                        font-weight: 600;
+                        color: #000;
+                        line-height: 20px;
+                        margin-bottom: 0;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        .ageType {
+                            font-size: 14px;
+                            background-color: #fb4226;
+                            border-radius: 4px;
+                            padding: 0 5px;
+                            color: #fff;
+                            min-width: 33px;
+                            text-align: center;
+                            display: inline-block;
+                            margin-right: 2px;
+                            font-weight: 600;
+                        }
+                        .ageType-general {
+                            background-color: #00ac4d;
+                        }
+                    }
+                    .infoFilm {
+                        font-size: 13px;
+                        color: #4a4a4a;
+                        margin-bottom: 15px;
+                        margin-top: 8px;
+                    }
+                }
+            }         
         }
         .slick-prev {
             left: -45px;

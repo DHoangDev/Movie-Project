@@ -19,77 +19,81 @@
   <link rel="stylesheet" href="./lib/slick/slick-theme.css">
   <!-- Venobox -->
   <link rel="stylesheet" href="./lib/venobox/venobox.min.css">
-  
+
   <link rel="stylesheet" href="./css/style.css">
 
 </head>
 
 <body>
   <!-- Header -->
-  <header id="header">
-    <nav class="navbar navbar-expand-md bg-light navbar-light">
-      <div class="col-2">
-        <!-- Brand -->
-        <a class="navbar-brand" href="#">
-          <img class="w-50" src="./assets/images/web-logo.png" alt="">
-        </a>
-      </div>
+  <header>
+    <nav class="navbar navbar-expand-md">
+
+      <!-- Brand -->
+      <a class="navbar-brand p-0" href="#">
+        <img class="w-50" src="./assets/images/web-logo.png" alt="">
+      </a>
+
       <!-- Toggler/collapsibe Button -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
+        <img class=" w-100" src="./assets/images/menu-options.png" alt="">
       </button>
 
       <!-- Navbar links -->
-      <div class="col-10">
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav navbar-menu ml-auto mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Lịch Chiếu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Cụm rạp</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Tin Tức</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Ứng dụng</a>
-          </ul>
 
-          <ul class="navbar-nav align-items-center navbar-login">
-            <li class="nav-item">
-              <a class="nav-link border-right" href="#"><img class="nav-avatar mr-2" src="./assets/images/avatar.png"
-                  alt="">Đăng
-                Nhập</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-map-marker-alt"></i> Hồ Chí Minh
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Hồ Chí Minh</a>
-                <a class="dropdown-item" href="#">Hà Nội</a>
-                <a class="dropdown-item" href="#">Đà Nẵng</a>
-                <a class="dropdown-item" href="#">Hải Phòng</a>
-                <a class="dropdown-item" href="#">Hồ Chí Minh</a>
-                <a class="dropdown-item" href="#">Hà Nội</a>
-                <a class="dropdown-item" href="#">Đà Nẵng</a>
-                <a class="dropdown-item" href="#">Hải Phòng</a>
-                <a class="dropdown-item" href="#">Hồ Chí Minh</a>
-                <a class="dropdown-item" href="#">Hà Nội</a>
-                <a class="dropdown-item" href="#">Đà Nẵng</a>
-                <a class="dropdown-item" href="#">Hải Phòng</a>
-                <a class="dropdown-item" href="#">Hồ Chí Minh</a>
-                <a class="dropdown-item" href="#">Hà Nội</a>
-                <a class="dropdown-item" href="#">Đà Nẵng</a>
-                <a class="dropdown-item" href="#">Hải Phòng</a>
-              </div>
-            </li>
-          </ul>
-        </div>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav navbar-menu ml-md-auto mr-md-auto order-2 order-md-1">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Lịch Chiếu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Cụm rạp</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tin Tức</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ứng dụng</a>
+        </ul>
+
+        <ul class="navbar-nav navbar-login align-items-center order-1 order-md-2">
+          <li class="nav-item">
+            <a class="nav-link border-right" href="#"><img class="nav-avatar mr-2" src="./assets/images/avatar.png"
+                alt="">Đăng
+              Nhập</a>
+          </li>
+          <li class="nav-item dropdown d-none d-md-block">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <i class="fas fa-map-marker-alt"></i> Hồ Chí Minh
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Hồ Chí Minh</a>
+              <a class="dropdown-item" href="#">Hà Nội</a>
+              <a class="dropdown-item" href="#">Đà Nẵng</a>
+              <a class="dropdown-item" href="#">Hải Phòng</a>
+              <a class="dropdown-item" href="#">Hồ Chí Minh</a>
+              <a class="dropdown-item" href="#">Hà Nội</a>
+              <a class="dropdown-item" href="#">Đà Nẵng</a>
+              <a class="dropdown-item" href="#">Hải Phòng</a>
+              <a class="dropdown-item" href="#">Hồ Chí Minh</a>
+              <a class="dropdown-item" href="#">Hà Nội</a>
+              <a class="dropdown-item" href="#">Đà Nẵng</a>
+              <a class="dropdown-item" href="#">Hải Phòng</a>
+              <a class="dropdown-item" href="#">Hồ Chí Minh</a>
+              <a class="dropdown-item" href="#">Hà Nội</a>
+              <a class="dropdown-item" href="#">Đà Nẵng</a>
+              <a class="dropdown-item" href="#">Hải Phòng</a>
+            </div>
+          </li>
+        </ul>
+
+        <button class="navbar-toggler navbar-close" id="close" type="button" data-toggle="collapse"
+          data-target="#collapsibleNavbar">
+          <i class="fas fa-chevron-right"></i>
+        </button>
       </div>
-      </div>
+
     </nav>
   </header>
 
@@ -180,403 +184,428 @@
     <div class="tab-content" id="nav-tabContent">
       <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
         <div class="carousel_slick_2">
-          <div class="carousel-item">
+          <div class="item">
             <div class="row">
-              <div class="col-12">
-                <div class="row">
-                  <div class="col-md-3">
-                    <div class="film">
-                      <a href="./chitiet.html">
-                        <div class="film-Thumnail img img-1">
-                          <div class="overlay">
-                            <button>
-                              <img class="w-100 d-block" src="./assets/images/play-video.png" alt="">
-                            </button>
-                          </div>
-                          <span>
-                            <p>8.8</p>
-                            <p>
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.2.png" alt="">
-                            </p>
-                          </span>
-                        </div>
-                      </a>
-                      <div class="info">
-                        <div class="nameFilm">
-                          <span class="ageType ageType-general">P</span>
-                          Trạng Tí Phiêu Lưu Ký
-                        </div>
-                        <div class="infoFilm">100 Phút</div>
-                      </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <span class="wrap">
+                  <a href="./chitiet.html" class="box w-100">
+                    <img class="w-100" src="./assets/images/trang-ti-16194120693380_215x318.jpg" alt="">
+                    <div class="overlay">
+                      <button>
+                        <img class="w-100 d-block" src="./assets/images/play-video.png" alt="">
+                      </button>
                     </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="film">
-                      <a href="./chitiet.html">
-                        <div class="film-Thumnail img img-2">
-                          <div class="overlay">
-                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
-                          </div>
-                          <span>
-                            <p>8.8</p>
-                            <p>
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.2.png" alt="">
-                            </p>
-                          </span>
-                        </div>
-                      </a>
-                      <div class="info">
-                        <div class="nameFilm">
-                          <span class="ageType">C18</span>
-                          Lật Mặt: 48h
-                        </div>
-                        <div class="infoFilm">100 Phút</div>
-                      </div>
+                    <span>
+                      <p>8.8</p>
+                      <p>
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.2.png" alt="">
+                      </p>
+                    </span>
+                  </a>
+                  <div class="info">
+                    <div class="nameFilm">
+                      <span class="ageType ageType-general">P</span>
+                      Trạng Tí Phiêu Lưu Ký
                     </div>
+                    <div class="infoFilm">100 Phút</div>
                   </div>
-                  <div class="col-md-3">
-                    <div class="film">
-                      <a href="./chitiet.html">
-                        <div class="film-Thumnail img img-3">
-                          <div class="overlay">
-                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
-                          </div>
-                          <span>
-                            <p>8.8</p>
-                            <p>
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.2.png" alt="">
-                            </p>
-                          </span>
-                        </div>
-                      </a>
-                      <div class="info">
-                        <div class="nameFilm">
-                          <span class="ageType">C18</span>
-                          Thiên Thần Hộ Mệnh - The Guardian (C18)
-                        </div>
-                        <div class="infoFilm">124 Phút</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="film">
-                      <a href="./chitiet.html">
-                        <div class="film-Thumnail img img-4">
-                          <div class="overlay">
-                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
-                          </div>
-                          <span>
-                            <p>8.8</p>
-                            <p>
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.2.png" alt="">
-                            </p>
-                          </span>
-                        </div>
-                      </a>
-                      <div class="info">
-                        <div class="nameFilm">
-                          <span class="ageType">C13</span>
-                          Detective Conan: Scarlet Bullet - Thám Tử Lừng Danh Conan: Viên Đạn Đỏ - C13
-                        </div>
-                        <div class="infoFilm">110 phút - 6.6 IMDb</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                </span>
               </div>
-              <div class="col-12">
-                <div class="row">
-                  <div class="col-md-3">
-                    <div class="film">
-                      <a href="">
-                        <div class="film-Thumnail img img-5">
-                          <div class="overlay">
-                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
-                          </div>
-                          <span>
-                            <p>8.8</p>
-                            <p>
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.2.png" alt="">
-                            </p>
-                          </span>
-                        </div>
-                      </a>
-                      <div class="info">
-                        <div class="nameFilm">
-                          <span class="ageType">C16</span>
-                          Người Nhân Bản - Seobok (C16)
-                        </div>
-                        <div class="infoFilm">114 phút - 6.3 IMDb</div>
-                      </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <span class="wrap">
+                  <a href="./chitiet.html" class="box w-100">
+                    <img class="w-100"
+                      src="https://s3img.vcdn.vn/mobile/123phim/2021/04/lat-mat-48h-16176188609123_215x318.png" alt="">
+                    <div class="overlay">
+                      <button>
+                        <img class="w-100 d-block" src="./assets/images/play-video.png" alt="">
+                      </button>
                     </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="film">
-                      <a href="">
-                        <div class="film-Thumnail img img-6">
-                          <div class="overlay">
-                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
-                          </div>
-                          <span>
-                            <p>8.8</p>
-                            <p>
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.2.png" alt="">
-                            </p>
-                          </span>
-                        </div>
-                      </a>
-                      <div class="info">
-                        <div class="nameFilm">
-                          <span class="ageType">C16</span>
-                          Bàn Tay Diệt Quỷ - Evil Expeller (C16)
-                        </div>
-                        <div class="infoFilm">129 phút</div>
-                      </div>
+                    <span>
+                      <p>8.8</p>
+                      <p>
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.2.png" alt="">
+                      </p>
+                    </span>
+                  </a>
+                  <div class="info">
+                    <div class="nameFilm">
+                      <span class="ageType">C18</span>
+                      Lật Mặt: 48h
                     </div>
+                    <div class="infoFilm">100 Phút</div>
                   </div>
-                  <div class="col-md-3">
-                    <div class="film">
-                      <a href="">
-                        <div class="film-Thumnail img img-7">
-                          <div class="overlay">
-                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
-                          </div>
-                          <span>
-                            <p>8.8</p>
-                            <p>
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.2.png" alt="">
-                            </p>
-                          </span>
-                        </div>
-                      </a>
-                      <div class="info">
-                        <div class="nameFilm">
-                          <span class="ageType">C18</span>
-                          Kẻ Vô Danh - Nobody - C18
-                        </div>
-                        <div class="infoFilm">92 phút - 7.4 IMDb</div>
-                      </div>
+                </span>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <span class="wrap">
+                  <a href="./chitiet.html" class="box w-100">
+                    <img class="w-100"
+                      src="https://s3img.vcdn.vn/mobile/123phim/2021/03/thien-than-ho-menh-16157907251398_215x318.jpg"
+                      alt="">
+                    <div class="overlay">
+                      <button>
+                        <img class="w-100 d-block" src="./assets/images/play-video.png" alt="">
+                      </button>
                     </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="film">
-                      <a href="">
-                        <div class="film-Thumnail img img-8">
-                          <div class="overlay">
-                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
-                          </div>
-                          <span>
-                            <p>8.8</p>
-                            <p>
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.2.png" alt="">
-                            </p>
-                          </span>
-                        </div>
-                      </a>
-                      <div class="info">
-                        <div class="nameFilm">
-                          <span class="ageType">C18</span>
-                          Hùng Thần Trắng - Great White - C18
-                        </div>
-                        <div class="infoFilm">100 phút - 3.9 IMDb</div>
-                      </div>
+                    <span>
+                      <p>8.8</p>
+                      <p>
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.2.png" alt="">
+                      </p>
+                    </span>
+                  </a>
+                  <div class="info">
+                    <div class="nameFilm">
+                      <span class="ageType">C18</span>
+                      Thiên Thần Hộ Mệnh - The Guardian (C18)
                     </div>
+                    <div class="infoFilm">100 Phút</div>
                   </div>
-                </div>
+                </span>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <span class="wrap">
+                  <a href="./chitiet.html" class="box w-100">
+                    <img class="w-100"
+                      src="https://s3img.vcdn.vn/mobile/123phim/2021/04/detective-conan-scarlet-bullet-tham-tu-lung-danh-conan-vien-dan-do-p-16185623740090_215x318.png"
+                      alt="">
+                    <div class="overlay">
+                      <button>
+                        <img class="w-100 d-block" src="./assets/images/play-video.png" alt="">
+                      </button>
+                    </div>
+                    <span>
+                      <p>8.8</p>
+                      <p>
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.2.png" alt="">
+                      </p>
+                    </span>
+                  </a>
+                  <div class="info">
+                    <div class="nameFilm">
+                      <span class="ageType">C13</span>
+                      Detective Conan: Scarlet Bullet - Thám Tử Lừng Danh Conan: Viên Đạn Đỏ - C13
+                    </div>
+                    <div class="infoFilm">110 phút - 6.5 IMDb</div>
+                  </div>
+                </span>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <span class="wrap">
+                  <a href="./chitiet.html" class="box w-100">
+                    <img class="w-100"
+                      src="https://s3img.vcdn.vn/mobile/123phim/2021/03/nguoi-nhan-ban-seobok-c18-16170933054901_215x318.jpg"
+                      alt="">
+                    <div class="overlay">
+                      <button>
+                        <img class="w-100 d-block" src="./assets/images/play-video.png" alt="">
+                      </button>
+                    </div>
+                    <span>
+                      <p>8.8</p>
+                      <p>
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.2.png" alt="">
+                      </p>
+                    </span>
+                  </a>
+                  <div class="info">
+                    <div class="nameFilm">
+                      <span class="ageType">C16</span>
+                      Người Nhân Bản - Seobok (C16)
+                    </div>
+                    <div class="infoFilm">100 Phút</div>
+                  </div>
+                </span>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <span class="wrap">
+                  <a href="./chitiet.html" class="box w-100">
+                    <img class="w-100"
+                      src="https://s3img.vcdn.vn/mobile/123phim/2021/03/ban-tay-diet-quy-evil-expeller-c16-16167437811994_215x318.png"
+                      alt="">
+                    <div class="overlay">
+                      <button>
+                        <img class="w-100 d-block" src="./assets/images/play-video.png" alt="">
+                      </button>
+                    </div>
+                    <span>
+                      <p>8.8</p>
+                      <p>
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.2.png" alt="">
+                      </p>
+                    </span>
+                  </a>
+                  <div class="info">
+                    <div class="nameFilm">
+                      <span class="ageType">C16</span>
+                      Bàn Tay Diệt Quỷ - Evil Expeller (C16)
+                    </div>
+                    <div class="infoFilm">100 Phút</div>
+                  </div>
+                </span>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <span class="wrap">
+                  <a href="./chitiet.html" class="box w-100">
+                    <img class="w-100"
+                      src="https://s3img.vcdn.vn/mobile/123phim/2021/04/ke-vo-danh-nobody-c18-16177813592209_215x318.png"
+                      alt="">
+                    <div class="overlay">
+                      <button>
+                        <img class="w-100 d-block" src="./assets/images/play-video.png" alt="">
+                      </button>
+                    </div>
+                    <span>
+                      <p>8.8</p>
+                      <p>
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.2.png" alt="">
+                      </p>
+                    </span>
+                  </a>
+                  <div class="info">
+                    <div class="nameFilm">
+                      <span class="ageType">C18</span>
+                      Kẻ Vô Danh - Nobody - C18
+                    </div>
+                    <div class="infoFilm">100 Phút</div>
+                  </div>
+                </span>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <span class="wrap">
+                  <a href="./chitiet.html" class="box w-100">
+                    <img class="w-100"
+                      src="https://s3img.vcdn.vn/mobile/123phim/2021/05/hung-than-trang-great-white-c13-16199525115620_215x318.png"
+                      alt="">
+                    <div class="overlay">
+                      <button>
+                        <img class="w-100 d-block" src="./assets/images/play-video.png" alt="">
+                      </button>
+                    </div>
+                    <span>
+                      <p>8.8</p>
+                      <p>
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.2.png" alt="">
+                      </p>
+                    </span>
+                  </a>
+                  <div class="info">
+                    <div class="nameFilm">
+                      <span class="ageType">C18</span>
+                      Hùng Thần Trắng - Great White - C18
+                    </div>
+                    <div class="infoFilm">100 Phút</div>
+                  </div>
+                </span>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="item">
             <div class="row">
-              <div class="col-12">
-                <div class="row">
-                  <div class="col-md-3">
-                    <div class="film">
-                      <a href="">
-                        <div class="film-Thumnail img img-9">
-                          <div class="overlay"><button><img class="w-100 d-block" src="./assets/images/play-video.png"
-                                alt=""></button></div>
-                          <span>
-                            <p>8.8</p>
-                            <p>
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.2.png" alt="">
-                            </p>
-                          </span>
-                        </div>
-                      </a>
-                      <div class="info">
-                        <div class="nameFilm">
-                          <span class="ageType">C18</span>
-                          Chiến Binh Cuối Cùng: Cuội Nguồn Của Quỷ - The Last Warrior: Root Of Evil - C13
-                        </div>
-                        <div class="infoFilm">122 phút - 5.9 IMDb</div>
-                      </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <span class="wrap">
+                  <a href="./chitiet.html" class="box w-100">
+                    <img class="w-100"
+                      src="https://s3img.vcdn.vn/mobile/123phim/2021/05/chien-binh-cuoi-cung-cuoi-nguon-cua-quy-the-last-warrior-root-of-evil-c13-16199511224567_215x318.png"
+                      alt="">
+                    <div class="overlay">
+                      <button>
+                        <img class="w-100 d-block" src="./assets/images/play-video.png" alt="">
+                      </button>
                     </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="film">
-                      <a href="">
-                        <div class="film-Thumnail img img-10">
-                          <div class="overlay"><button><img class="w-100 d-block" src="./assets/images/play-video.png"
-                                alt=""></button></div>
-                          <span>
-                            <p>8.8</p>
-                            <p>
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.2.png" alt="">
-                            </p>
-                          </span>
-                        </div>
-                      </a>
-                      <div class="info">
-                        <div class="nameFilm">
-                          <span class="ageType ageType-general">P</span>
-                          Ong Nhí Phiêu Lưu Ký: Giải Cứu Công Chúa Kiến - Maya The Bee 3: The Golden Orb - P
-                        </div>
-                        <div class="infoFilm">88 phút</div>
-                      </div>
+                    <span>
+                      <p>8.8</p>
+                      <p>
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.2.png" alt="">
+                      </p>
+                    </span>
+                  </a>
+                  <div class="info">
+                    <div class="nameFilm">
+                      <span class="ageType">C13</span>
+                      Chiến Binh Cuối Cùng: Cuội Nguồn Của Quỷ - The Last Warrior: Root Of Evil - C13
                     </div>
+                    <div class="infoFilm">122 phút - 5.9 IMDb</div>
                   </div>
-                  <div class="col-md-3">
-                    <div class="film">
-                      <a href="">
-                        <div class="film-Thumnail img img-11">
-                          <div class="overlay"><button><img class="w-100 d-block" src="./assets/images/play-video.png"
-                                alt=""></button></div>
-                          <span>
-                            <p>8.8</p>
-                            <p>
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.2.png" alt="">
-                            </p>
-                          </span>
-                        </div>
-                      </a>
-                      <div class="info">
-                        <div class="nameFilm">
-                          <span class="ageType">C13</span>
-                          Nhân Đôi Tình Yêu - Double Party - C13
-                        </div>
-                        <div class="infoFilm">107 phút</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="film">
-                      <a href="">
-                        <div class="film-Thumnail img img-12">
-                          <div class="overlay"><button><img class="w-100 d-block" src="./assets/images/play-video.png"
-                                alt=""></button></div>
-                          <span>
-                            <p>8.8</p>
-                            <p>
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.2.png" alt="">
-                            </p>
-                          </span>
-                        </div>
-                      </a>
-                      <div class="info">
-                        <div class="nameFilm">
-                          <span class="ageType">C18</span>
-                          Trùm Cuối Siêu Đẳng - Boss Level - C18
-                        </div>
-                        <div class="infoFilm">100 phút - 6.9 IMDb</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                </span>
               </div>
-              <div class="col-12">
-                <div class="row">
-                  <div class="col-md-3">
-                    <div class="film">
-                      <a href="">
-                        <div class="film-Thumnail img img-13">
-                          <div class="overlay"><button><img class="w-100 d-block" src="./assets/images/play-video.png"
-                                alt=""></button></div>
-                          <span>
-                            <p>8.8</p>
-                            <p>
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.2.png" alt="">
-                            </p>
-                          </span>
-                        </div>
-                      </a>
-                      <div class="info">
-                        <div class="nameFilm">
-                          <span class="ageType">C18</span>
-                          The Hypnosis - Con Lắc Tà Thuật - C18
-                        </div>
-                        <div class="infoFilm">100 phút - 6.5 IMDb</div>
-                      </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <span class="wrap">
+                  <a href="./chitiet.html" class="box w-100">
+                    <img class="w-100"
+                      src="https://s3img.vcdn.vn/mobile/123phim/2021/04/ong-nhi-phieu-luu-ky-giai-cuu-cong-chua-kien-maya-the-bee-3-the-golden-orb-p-16177793756407_215x318.png"
+                      alt="">
+                    <div class="overlay">
+                      <button>
+                        <img class="w-100 d-block" src="./assets/images/play-video.png" alt="">
+                      </button>
                     </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="film">
-                      <a href="">
-                        <div class="film-Thumnail img img-14">
-                          <div class="overlay"><button><img class="w-100 d-block" src="./assets/images/play-video.png"
-                                alt=""></button></div>
-                          <span>
-                            <p>8.8</p>
-                            <p>
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.png" alt="">
-                              <img src="./assets/images/star1.2.png" alt="">
-                            </p>
-                          </span>
-                        </div>
-                      </a>
-                      <div class="info">
-                        <div class="nameFilm">
-                          <span class="ageType">C13</span>
-                          Godzilla vs. Kong
-                        </div>
-                        <div class="infoFilm">100 phút - 6.5 IMDb</div>
-                      </div>
+                    <span>
+                      <p>8.8</p>
+                      <p>
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.2.png" alt="">
+                      </p>
+                    </span>
+                  </a>
+                  <div class="info">
+                    <div class="nameFilm">
+                      <span class="ageType ageType-general">P</span>
+                      Ong Nhí Phiêu Lưu Ký: Giải Cứu Công Chúa Kiến - Maya The Bee 3: The Golden Orb - P
                     </div>
+                    <div class="infoFilm">100 Phút</div>
                   </div>
-                  <div class="col-md-3"></div>
-                  <div class="col-md-3"></div>
-                </div>
+                </span>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <span class="wrap">
+                  <a href="./chitiet.html" class="box w-100">
+                    <img class="w-100"
+                      src="https://s3img.vcdn.vn/mobile/123phim/2021/04/nhan-doi-tinh-yeu-double-party-c13-16188292910862_215x318.png"
+                      alt="">
+                    <div class="overlay">
+                      <button>
+                        <img class="w-100 d-block" src="./assets/images/play-video.png" alt="">
+                      </button>
+                    </div>
+                    <span>
+                      <p>8.8</p>
+                      <p>
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.2.png" alt="">
+                      </p>
+                    </span>
+                  </a>
+                  <div class="info">
+                    <div class="nameFilm">
+                      <span class="ageType">C18</span>
+                      Hùng Thần Trắng - Great White - C18
+                    </div>
+                    <div class="infoFilm">100 Phút</div>
+                  </div>
+                </span>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <span class="wrap">
+                  <a href="./chitiet.html" class="box w-100">
+                    <img class="w-100"
+                      src="https://s3img.vcdn.vn/mobile/123phim/2021/04/trum-cuoi-sieu-dang-bosslevel-c18-16188999396703_215x318.png"
+                      alt="">
+                    <div class="overlay">
+                      <button>
+                        <img class="w-100 d-block" src="./assets/images/play-video.png" alt="">
+                      </button>
+                    </div>
+                    <span>
+                      <p>8.8</p>
+                      <p>
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.2.png" alt="">
+                      </p>
+                    </span>
+                  </a>
+                  <div class="info">
+                    <div class="nameFilm">
+                      <span class="ageType">C18</span>
+                      Trùm Cuối Siêu Đẳng - Boss Level - C18
+                    </div>
+                    <div class="infoFilm">100 phút - 6.9 IMDb</div>
+                  </div>
+                </span>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <span class="wrap">
+                  <a href="./chitiet.html" class="box w-100">
+                    <img class="w-100"
+                      src="https://s3img.vcdn.vn/mobile/123phim/2021/05/hung-than-trang-great-white-c13-16199525115620_215x318.png"
+                      alt="">
+                    <div class="overlay">
+                      <button>
+                        <img class="w-100 d-block" src="./assets/images/play-video.png" alt="">
+                      </button>
+                    </div>
+                    <span>
+                      <p>8.8</p>
+                      <p>
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.2.png" alt="">
+                      </p>
+                    </span>
+                  </a>
+                  <div class="info">
+                    <div class="nameFilm">
+                      <span class="ageType">C18</span>
+                      Hùng Thần Trắng - Great White - C18
+                    </div>
+                    <div class="infoFilm">100 Phút</div>
+                  </div>
+                </span>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <span class="wrap">
+                  <a href="" class="box w-100">
+                    <img class="w-100"
+                      src="https://s3img.vcdn.vn/mobile/123phim/2021/05/hung-than-trang-great-white-c13-16199525115620_215x318.png"
+                      alt="">
+                    <div class="overlay">
+                      <button>
+                        <img class="w-100 d-block" src="./assets/images/play-video.png" alt="">
+                      </button>
+                    </div>
+                    <span>
+                      <p>8.8</p>
+                      <p>
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.png" alt="">
+                        <img src="./assets/images/star1.2.png" alt="">
+                      </p>
+                    </span>
+                  </a>
+                  <div class="info">
+                    <div class="nameFilm">
+                      <span class="ageType">C18</span>
+                      Hùng Thần Trắng - Great White - C18
+                    </div>
+                    <div class="infoFilm">100 Phút</div>
+                  </div>
+                </span>
               </div>
             </div>
           </div>
@@ -584,331 +613,389 @@
       </div>
       <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
         <div class="carousel_slick_3">
-          <div class="carousel-item">
+          <div class="item">
             <div class="row">
-              <div class="col-12">
-                <div class="row">
-                  <div class="col-md-3">
-                    <div class="film">
-                      <a href="">
-                        <div class="film-Thumnail img img-1">
-                          <div class="overlay">
-                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
-                          </div>
-                          <span>05/03</span>
-                        </div>
-                      </a>
-                      <div class="info">
-                        <div class="nameFilm">
-                          <span class="ageType ageType-general">P</span>
-                          Trạng Tí Phiêu Lưu Ký
-                        </div>
-                        <div class="infoFilm">100 Phút</div>
-                      </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <span class="wrap">
+                  <a href="" class="box w-100">
+                    <img class="w-100"
+                      src="https://s3img.vcdn.vn/mobile/123phim/2020/02/john-wick-chapter-4-15827770304921_215x318.jpg"
+                      alt="">
+                    <div class="overlay">
+                      <button>
+                        <img class="w-100 d-block" src="./assets/images/play-video.png" alt="">
+                      </button>
                     </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="film">
-                      <a href="">
-                        <div class="film-Thumnail img img-2">
-                          <div class="overlay">
-                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
-                          </div>
-                          <span>01/04</span>
-                        </div>
-                      </a>
-                      <div class="info">
-                        <div class="nameFilm">
-                          <span class="ageType">C18</span>
-                          Lật Mặt: 48h
-                        </div>
-                        <div class="infoFilm">100 Phút</div>
-                      </div>
+                    <span>
+                      21/05
+                    </span>
+                  </a>
+                  <div class="info">
+                    <div class="nameFilm">
+                      <span class="ageType ageType-general">P</span>
+                      Hùng Thần Trắng - Great White - C18
                     </div>
+                    <div class="infoFilm">100 Phút</div>
                   </div>
-                  <div class="col-md-3">
-                    <div class="film">
-                      <a href="">
-                        <div class="film-Thumnail img img-3">
-                          <div class="overlay">
-                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
-                          </div>
-                          <span>01/04</span>
-                        </div>
-                      </a>
-                      <div class="info">
-                        <div class="nameFilm">
-                          <span class="ageType">C18</span>
-                          Thiên Thần Hộ Mệnh - The Guardian (C18)
-                        </div>
-                        <div class="infoFilm">124 Phút</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="film">
-                      <a href="">
-                        <div class="film-Thumnail img img-4">
-                          <div class="overlay">
-                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
-                          </div>
-                          <span>01/04</span>
-                        </div>
-                      </a>
-                      <div class="info">
-                        <div class="nameFilm">
-                          <span class="ageType">C13</span>
-                          Detective Conan: Scarlet Bullet - Thám Tử Lừng Danh Conan: Viên Đạn Đỏ - C13
-                        </div>
-                        <div class="infoFilm">110 phút - 6.6 IMDb</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                </span>
               </div>
-              <div class="col-12">
-                <div class="row">
-                  <div class="col-md-3">
-                    <div class="film">
-                      <a href="">
-                        <div class="film-Thumnail img img-5">
-                          <div class="overlay">
-                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
-                          </div>
-                          <span>05/03</span>
-                        </div>
-                      </a>
-                      <div class="info">
-                        <div class="nameFilm">
-                          <span class="ageType">C16</span>
-                          Người Nhân Bản - Seobok (C16)
-                        </div>
-                        <div class="infoFilm">114 phút - 6.3 IMDb</div>
-                      </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <span class="wrap">
+                  <a href="" class="box w-100">
+                    <img class="w-100"
+                      src="https://s3img.vcdn.vn/mobile/123phim/2021/04/dua-be-i-16188328093041_215x318.png" alt="">
+                    <div class="overlay">
+                      <button>
+                        <img class="w-100 d-block" src="./assets/images/play-video.png" alt="">
+                      </button>
                     </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="film">
-                      <a href="">
-                        <div class="film-Thumnail img img-6">
-                          <div class="overlay">
-                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
-                          </div>
-                          <span>05/03</span>
-                        </div>
-                      </a>
-                      <div class="info">
-                        <div class="nameFilm">
-                          <span class="ageType">C16</span>
-                          Bàn Tay Diệt Quỷ - Evil Expeller (C16)
-                        </div>
-                        <div class="infoFilm">129 phút</div>
-                      </div>
+                    <span>
+                      21/05
+                    </span>
+                  </a>
+                  <div class="info">
+                    <div class="nameFilm">
+                      <span class="ageType ageType-general">P</span>
+                      Hùng Thần Trắng - Great White - C18
                     </div>
+                    <div class="infoFilm">100 Phút</div>
                   </div>
-                  <div class="col-md-3">
-                    <div class="film">
-                      <a href="">
-                        <div class="film-Thumnail img img-7">
-                          <div class="overlay">
-                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
-                          </div>
-                          <span>05/03</span>
-                        </div>
-                      </a>
-                      <div class="info">
-                        <div class="nameFilm">
-                          <span class="ageType">C18</span>
-                          Kẻ Vô Danh - Nobody - C18
-                        </div>
-                        <div class="infoFilm">92 phút - 7.4 IMDb</div>
-                      </div>
+                </span>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <span class="wrap">
+                  <a href="" class="box w-100">
+                    <img class="w-100"
+                      src="https://s3img.vcdn.vn/mobile/123phim/2019/08/shang-chi-and-the-legend-of-the-ten-rings-15668741464229_215x318.jpg"
+                      alt="">
+                    <div class="overlay">
+                      <button>
+                        <img class="w-100 d-block" src="./assets/images/play-video.png" alt="">
+                      </button>
                     </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="film">
-                      <a href="">
-                        <div class="film-Thumnail img img-8">
-                          <div class="overlay">
-                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
-                          </div>
-                          <span>05/03</span>
-                        </div>
-                      </a>
-                      <div class="info">
-                        <div class="nameFilm">
-                          <span class="ageType">C18</span>
-                          Hùng Thần Trắng - Great White - C18
-                        </div>
-                        <div class="infoFilm">100 phút - 3.9 IMDb</div>
-                      </div>
+                    <span>
+                      21/05
+                    </span>
+                  </a>
+                  <div class="info">
+                    <div class="nameFilm">
+                      <span class="ageType ageType-general">P</span>
+                      Hùng Thần Trắng - Great White - C18
                     </div>
+                    <div class="infoFilm">100 Phút</div>
                   </div>
-                </div>
+                </span>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <span class="wrap">
+                  <a href="" class="box w-100">
+                    <img class="w-100"
+                      src="https://s3img.vcdn.vn/mobile/123phim/2021/03/1990-c16-16170969832613_215x318.jpg" alt="">
+                    <div class="overlay">
+                      <button>
+                        <img class="w-100 d-block" src="./assets/images/play-video.png" alt="">
+                      </button>
+                    </div>
+                    <span>
+                      21/05
+                    </span>
+                  </a>
+                  <div class="info">
+                    <div class="nameFilm">
+                      <span class="ageType ageType-general">P</span>
+                      Hùng Thần Trắng - Great White - C18
+                    </div>
+                    <div class="infoFilm">100 Phút</div>
+                  </div>
+                </span>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <span class="wrap">
+                  <a href="" class="box w-100">
+                    <img class="w-100"
+                      src="https://s3img.vcdn.vn/mobile/123phim/2020/01/fast-furious-9-15803709020861_215x318.jpg"
+                      alt="">
+                    <div class="overlay">
+                      <button>
+                        <img class="w-100 d-block" src="./assets/images/play-video.png" alt="">
+                      </button>
+                    </div>
+                    <span>
+                      21/05
+                    </span>
+                  </a>
+                  <div class="info">
+                    <div class="nameFilm">
+                      <span class="ageType ageType-general">P</span>
+                      Hùng Thần Trắng - Great White - C18
+                    </div>
+                    <div class="infoFilm">100 Phút</div>
+                  </div>
+                </span>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <span class="wrap">
+                  <a href="" class="box w-100">
+                    <img class="w-100"
+                      src="https://s3img.vcdn.vn/mobile/123phim/2020/02/the-matrix-4-15827771560629_215x318.jpg" alt="">
+                    <div class="overlay">
+                      <button>
+                        <img class="w-100 d-block" src="./assets/images/play-video.png" alt="">
+                      </button>
+                    </div>
+                    <span>
+                      21/05
+                    </span>
+                  </a>
+                  <div class="info">
+                    <div class="nameFilm">
+                      <span class="ageType ageType-general">P</span>
+                      Hùng Thần Trắng - Great White - C18
+                    </div>
+                    <div class="infoFilm">100 Phút</div>
+                  </div>
+                </span>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <span class="wrap">
+                  <a href="" class="box w-100">
+                    <img class="w-100"
+                      src="https://s3img.vcdn.vn/mobile/123phim/2021/04/cruella-16182123467884_215x318.png" alt="">
+                    <div class="overlay">
+                      <button>
+                        <img class="w-100 d-block" src="./assets/images/play-video.png" alt="">
+                      </button>
+                    </div>
+                    <span>
+                      21/05
+                    </span>
+                  </a>
+                  <div class="info">
+                    <div class="nameFilm">
+                      <span class="ageType ageType-general">P</span>
+                      Hùng Thần Trắng - Great White - C18
+                    </div>
+                    <div class="infoFilm">100 Phút</div>
+                  </div>
+                </span>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <span class="wrap">
+                  <a href="" class="box w-100">
+                    <img class="w-100"
+                      src="https://s3img.vcdn.vn/mobile/123phim/2021/03/chu-ngua-bat-kham-spirit-p-16171851912283_215x318.png"
+                      alt="">
+                    <div class="overlay">
+                      <button>
+                        <img class="w-100 d-block" src="./assets/images/play-video.png" alt="">
+                      </button>
+                    </div>
+                    <span>
+                      21/05
+                    </span>
+                  </a>
+                  <div class="info">
+                    <div class="nameFilm">
+                      <span class="ageType ageType-general">P</span>
+                      Hùng Thần Trắng - Great White - C18
+                    </div>
+                    <div class="infoFilm">100 Phút</div>
+                  </div>
+                </span>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="item">
             <div class="row">
-              <div class="col-12">
-                <div class="row">
-                  <div class="col-md-3">
-                    <div class="film">
-                      <a href="">
-                        <div class="film-Thumnail img img-9">
-                          <div class="overlay">
-                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
-                          </div>
-                          <span>05/03</span>
-                        </div>
-                      </a>
-                      <div class="info">
-                        <div class="nameFilm">
-                          <span class="ageType">C18</span>
-                          Chiến Binh Cuối Cùng: Cuội Nguồn Của Quỷ - The Last Warrior: Root Of Evil - C13
-                        </div>
-                        <div class="infoFilm">122 phút - 5.9 IMDb</div>
-                      </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <span class="wrap">
+                  <a href="" class="box w-100">
+                    <img class="w-100"
+                      src="https://s3img.vcdn.vn/mobile/123phim/2019/11/am-anh-kinh-hoang-3-the-conjuring-3-c18-15742352934530_215x318.jpg"
+                      alt="">
+                    <div class="overlay">
+                      <button>
+                        <img class="w-100 d-block" src="./assets/images/play-video.png" alt="">
+                      </button>
                     </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="film">
-                      <a href="">
-                        <div class="film-Thumnail img img-10">
-                          <div class="overlay">
-                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
-                          </div>
-                          <span>05/03</span>
-                        </div>
-                      </a>
-                      <div class="info">
-                        <div class="nameFilm">
-                          <span class="ageType ageType-general">P</span>
-                          Ong Nhí Phiêu Lưu Ký: Giải Cứu Công Chúa Kiến - Maya The Bee 3: The Golden Orb - P
-                        </div>
-                        <div class="infoFilm">88 phút</div>
-                      </div>
+                    <span>
+                      21/05
+                    </span>
+                  </a>
+                  <div class="info">
+                    <div class="nameFilm">
+                      <span class="ageType ageType-general">P</span>
+                      Hùng Thần Trắng - Great White - C18
                     </div>
+                    <div class="infoFilm">100 Phút</div>
                   </div>
-                  <div class="col-md-3">
-                    <div class="film">
-                      <a href="">
-                        <div class="film-Thumnail img img-11">
-                          <div class="overlay">
-                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
-                          </div>
-                          <span>05/03</span>
-                        </div>
-                      </a>
-                      <div class="info">
-                        <div class="nameFilm">
-                          <span class="ageType ageType-general">C13</span>
-                          Nhân Đôi Tình Yêu - Double Party - C13
-                        </div>
-                        <div class="infoFilm">107 phút</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="film">
-                      <a href="">
-                        <div class="film-Thumnail img img-12">
-                          <div class="overlay">
-                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
-                          </div>
-                          <span>05/03</span>
-                        </div>
-                      </a>
-                      <div class="info">
-                        <div class="nameFilm">
-                          <span class="ageType ageType-general">C18</span>
-                          Trùm Cuối Siêu Đẳng - Boss Level - C18
-                        </div>
-                        <div class="infoFilm">100 phút - 6.9 IMDb</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                </span>
               </div>
-              <div class="col-12">
-                <div class="row">
-                  <div class="col-md-3">
-                    <div class="film">
-                      <a href="">
-                        <div class="film-Thumnail img img-13">
-                          <div class="overlay">
-                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
-                          </div>
-                          <span>05/03</span>
-                        </div>
-                      </a>
-                      <div class="info">
-                        <div class="nameFilm">
-                          <span class="ageType ageType-general">C18</span>
-                          The Hypnosis - Con Lắc Tà Thuật - C18
-                        </div>
-                        <div class="infoFilm">100 phút - 6.5 IMDb</div>
-                      </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <span class="wrap">
+                  <a href="" class="box w-100">
+                    <img class="w-100"
+                      src="https://s3img.vcdn.vn/mobile/123phim/2020/02/jurassic-world-dominion-15827788277771_215x318.jpg"
+                      alt="">
+                    <div class="overlay">
+                      <button>
+                        <img class="w-100 d-block" src="./assets/images/play-video.png" alt="">
+                      </button>
                     </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="film">
-                      <a href="">
-                        <div class="film-Thumnail img img-14">
-                          <div class="overlay">
-                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
-                          </div>
-                          <span>05/03</span>
-                        </div>
-                      </a>
-                      <div class="info">
-                        <div class="nameFilm">
-                          <span class="ageType ageType-general">C13</span>
-                          Godzilla vs. Kong
-                        </div>
-                        <div class="infoFilm">100 phút - 6.5 IMDb</div>
-                      </div>
+                    <span>
+                      21/05
+                    </span>
+                  </a>
+                  <div class="info">
+                    <div class="nameFilm">
+                      <span class="ageType ageType-general">P</span>
+                      Hùng Thần Trắng - Great White - C18
                     </div>
+                    <div class="infoFilm">100 Phút</div>
                   </div>
-                  <div class="col-md-3">
-                    <div class="film">
-                      <a href="">
-                        <div class="film-Thumnail img img-15">
-                          <div class="overlay">
-                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
-                          </div>
-                          <span>05/03</span>
-                        </div>
-                      </a>
-                      <div class="info">
-                        <div class="nameFilm">
-                          <span class="ageType ageType-general">C13</span>
-                          Godzilla vs. Kong
-                        </div>
-                        <div class="infoFilm">100 phút - 6.5 IMDb</div>
-                      </div>
+                </span>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <span class="wrap">
+                  <a href="" class="box w-100">
+                    <img class="w-100"
+                      src="https://s3img.vcdn.vn/mobile/123phim/2020/02/em-va-trinh-15813267048692_215x318.jpg" alt="">
+                    <div class="overlay">
+                      <button>
+                        <img class="w-100 d-block" src="./assets/images/play-video.png" alt="">
+                      </button>
                     </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="film">
-                      <a href="">
-                        <div class="film-Thumnail img img-16">
-                          <div class="overlay">
-                            <button><img class="w-100 d-block" src="./assets/images/play-video.png" alt=""></button>
-                          </div>
-                          <span>05/03</span>
-                        </div>
-                      </a>
-                      <div class="info">
-                        <div class="nameFilm">
-                          <span class="ageType ageType-general">C13</span>
-                          Godzilla vs. Kong
-                        </div>
-                        <div class="infoFilm">100 phút - 6.5 IMDb</div>
-                      </div>
+                    <span>
+                      21/05
+                    </span>
+                  </a>
+                  <div class="info">
+                    <div class="nameFilm">
+                      <span class="ageType ageType-general">P</span>
+                      Hùng Thần Trắng - Great White - C18
                     </div>
+                    <div class="infoFilm">100 Phút</div>
                   </div>
-                </div>
+                </span>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <span class="wrap">
+                  <a href="" class="box w-100">
+                    <img class="w-100"
+                      src="https://s3img.vcdn.vn/mobile/123phim/2019/12/biet-doi-san-ma-chuyen-kiep-ghostbusters-afterlife-15759470166331_215x318.jpg"
+                      alt="">
+                    <div class="overlay">
+                      <button>
+                        <img class="w-100 d-block" src="./assets/images/play-video.png" alt="">
+                      </button>
+                    </div>
+                    <span>
+                      08/05
+                    </span>
+                  </a>
+                  <div class="info">
+                    <div class="nameFilm">
+                      <span class="ageType ageType-general">P</span>
+                      Hùng Thần Trắng - Great White - C18
+                    </div>
+                    <div class="infoFilm">100 Phút</div>
+                  </div>
+                </span>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <span class="wrap">
+                  <a href="" class="box w-100">
+                    <img class="w-100"
+                      src="https://s3img.vcdn.vn/mobile/123phim/2021/03/chu-ngua-bat-kham-spirit-p-16171851912283_215x318.png"
+                      alt="">
+                    <div class="overlay">
+                      <button>
+                        <img class="w-100 d-block" src="./assets/images/play-video.png" alt="">
+                      </button>
+                    </div>
+                    <span>
+                      08/05
+                    </span>
+                  </a>
+                  <div class="info">
+                    <div class="nameFilm">
+                      <span class="ageType">C18</span>
+                      Hùng Thần Trắng - Great White - C18
+                    </div>
+                    <div class="infoFilm">100 Phút</div>
+                  </div>
+                </span>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <span class="wrap">
+                  <a href="" class="box w-100">
+                    <img class="w-100"
+                      src="https://s3img.vcdn.vn/mobile/123phim/2020/01/in-the-heights-15779380081932_215x318.jpg"
+                      alt="">
+                    <div class="overlay">
+                      <button>
+                        <img class="w-100 d-block" src="./assets/images/play-video.png" alt="">
+                      </button>
+                    </div>
+                    <span>
+                      08/05
+                    </span>
+                  </a>
+                  <div class="info">
+                    <div class="nameFilm">
+                      <span class="ageType">C18</span>
+                      Hùng Thần Trắng - Great White - C18
+                    </div>
+                    <div class="infoFilm">100 Phút</div>
+                  </div>
+                </span>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <span class="wrap">
+                  <a href="" class="box w-100">
+                    <img class="w-100"
+                      src="https://s3img.vcdn.vn/mobile/123phim/2019/11/venom-2-15740591875202_215x318.jpg" alt="">
+                    <div class="overlay">
+                      <button>
+                        <img class="w-100 d-block" src="./assets/images/play-video.png" alt="">
+                      </button>
+                    </div>
+                    <span>
+                      08/05
+                    </span>
+                  </a>
+                  <div class="info">
+                    <div class="nameFilm">
+                      <span class="ageType">C18</span>
+                      Hùng Thần Trắng - Great White - C18
+                    </div>
+                    <div class="infoFilm">100 Phút</div>
+                  </div>
+                </span>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3">
+                <span class="wrap">
+                  <a href="" class="box w-100">
+                    <img class="w-100"
+                      src="https://s3img.vcdn.vn/mobile/123phim/2020/02/minions-su-troi-day-cua-gru-15809552091851_215x318.jpg"
+                      alt="">
+                    <div class="overlay">
+                      <button>
+                        <img class="w-100 d-block" src="./assets/images/play-video.png" alt="">
+                      </button>
+                    </div>
+                    <span>
+                      08/05
+                    </span>
+                  </a>
+                  <div class="info">
+                    <div class="nameFilm">
+                      <span class="ageType ageType-general">P</span>
+                      Hùng Thần Trắng - Great White - C18
+                    </div>
+                    <div class="infoFilm">100 Phút</div>
+                  </div>
+                </span>
               </div>
             </div>
           </div>
@@ -1027,13 +1114,14 @@
     <div class="tab-content mt-3" id="nav-tab-2Content">
       <div class="tab-pane fade show active" id="nav-cine" role="tabpanel" aria-labelledby="nav-cine-tab">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-sm-6">
             <div class="newsContent">
               <img class="w-100 rounded"
                 src="./assets/images/an-dinh-chac-nich-ngay-khoi-chieu-16-04-ly-hai-tung-clip-lat-mat-48h-dam-chat-fast-furious-mien-song-nuoc-16170881088272.png"
                 alt="">
               <a href="">Ấn định chắc nịch ngày khởi chiếu 16.04, Lý Hải tung clip Lật Mặt: 48H đậm chất</a>
-              <p>Trước thềm khởi chiếu 16.04 này, Lý Hải bất ngờ tung clip rượt đuổi gay cấn thót tim fans hâm mộ</p>
+              <p>Trước thềm khởi chiếu 16.04 này, Lý Hải bất ngờ tung clip rượt đuổi gay cấn thót tim fans hâm mộ
+              </p>
               <div class="reaction d-flex">
                 <span class="like mr-2">
                   <a href=""><i class="far fa-thumbs-up"></i></a>
@@ -1046,13 +1134,14 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-sm-6">
             <div class="newsContent">
               <img class="w-100 rounded"
                 src="./assets/images/mortal-kombat-cuoc-chien-sinh-tu-goi-ten-nhung-phim-dien-anh-noi-tieng-duoc-chuyen-the-tu-cac-tua-game-dinh-dam-16170160290762.png"
                 alt="">
               <a href="">Ấn định chắc nịch ngày khởi chiếu 16.04, Lý Hải tung clip Lật Mặt: 48H đậm chất</a>
-              <p>Trước thềm khởi chiếu 16.04 này, Lý Hải bất ngờ tung clip rượt đuổi gay cấn thót tim fans hâm mộ</p>
+              <p>Trước thềm khởi chiếu 16.04 này, Lý Hải bất ngờ tung clip rượt đuổi gay cấn thót tim fans hâm mộ
+              </p>
               <div class="reaction d-flex">
                 <span class="like mr-2">
                   <a href=""><i class="far fa-thumbs-up"></i></a>
@@ -1065,13 +1154,14 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-sm-4">
             <div class="newsContent">
               <img class="w-100 rounded"
                 src="./assets/images/promising-young-woman-bong-hong-nuoc-anh-carey-mulligan-va-man-tra-thu-dan-ong-de-doi-16166710855522.png"
                 alt="">
               <a href="">Ấn định chắc nịch ngày khởi chiếu 16.04, Lý Hải tung clip Lật Mặt: 48H đậm chất</a>
-              <p>Trước thềm khởi chiếu 16.04 này, Lý Hải bất ngờ tung clip rượt đuổi gay cấn thót tim fans hâm mộ</p>
+              <p>Trước thềm khởi chiếu 16.04 này, Lý Hải bất ngờ tung clip rượt đuổi gay cấn thót tim fans hâm mộ
+              </p>
               <div class="reaction d-flex">
                 <span class="like mr-2">
                   <a href=""><i class="far fa-thumbs-up"></i></a>
@@ -1084,13 +1174,14 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-sm-4">
             <div class="newsContent">
               <img class="w-100 rounded"
                 src="./assets/images/vua-dep-lai-vua-tai-nang-dan-sao-nam-cua-phim-ban-tay-diet-quy-dam-bao-don-tim-hoi-chi-em-16165783843676.png"
                 alt="">
               <a href="">Ấn định chắc nịch ngày khởi chiếu 16.04, Lý Hải tung clip Lật Mặt: 48H đậm chất</a>
-              <p>Trước thềm khởi chiếu 16.04 này, Lý Hải bất ngờ tung clip rượt đuổi gay cấn thót tim fans hâm mộ</p>
+              <p>Trước thềm khởi chiếu 16.04 này, Lý Hải bất ngờ tung clip rượt đuổi gay cấn thót tim fans hâm mộ
+              </p>
               <div class="reaction d-flex">
                 <span class="like mr-2">
                   <a href=""><i class="far fa-thumbs-up"></i></a>
@@ -1103,7 +1194,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-sm-4">
             <div class="row">
               <div class="col-md-12">
                 <div class="news">
@@ -1154,13 +1245,13 @@
       </div>
       <div class="tab-pane fade" id="nav-review" role="tabpanel" aria-labelledby="nav-review-tab">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-sm-6">
             <div class="newsContent">
               <img class="w-100 rounded"
-                src="./assets/images/an-dinh-chac-nich-ngay-khoi-chieu-16-04-ly-hai-tung-clip-lat-mat-48h-dam-chat-fast-furious-mien-song-nuoc-16170881088272.png"
-                alt="">
+                src="./assets/images/review-tan-tich-quy-am-relic-ba-the-he-va-moi-lien-ket-15965255784224.png" alt="">
               <a href="">Ấn định chắc nịch ngày khởi chiếu 16.04, Lý Hải tung clip Lật Mặt: 48H đậm chất</a>
-              <p>Trước thềm khởi chiếu 16.04 này, Lý Hải bất ngờ tung clip rượt đuổi gay cấn thót tim fans hâm mộ</p>
+              <p>Trước thềm khởi chiếu 16.04 này, Lý Hải bất ngờ tung clip rượt đuổi gay cấn thót tim fans hâm mộ
+              </p>
               <div class="reaction d-flex">
                 <span class="like mr-2">
                   <a href=""><i class="far fa-thumbs-up"></i></a>
@@ -1173,13 +1264,13 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-sm-6">
             <div class="newsContent">
-              <img class="w-100 rounded"
-                src="./assets/images/mortal-kombat-cuoc-chien-sinh-tu-goi-ten-nhung-phim-dien-anh-noi-tieng-duoc-chuyen-the-tu-cac-tua-game-dinh-dam-16170160290762.png"
+              <img class="w-100 rounded" src="./assets/images/review-dinh-thu-oan-khuat-ghost-of-war-15965120886610.png"
                 alt="">
               <a href="">Ấn định chắc nịch ngày khởi chiếu 16.04, Lý Hải tung clip Lật Mặt: 48H đậm chất</a>
-              <p>Trước thềm khởi chiếu 16.04 này, Lý Hải bất ngờ tung clip rượt đuổi gay cấn thót tim fans hâm mộ</p>
+              <p>Trước thềm khởi chiếu 16.04 này, Lý Hải bất ngờ tung clip rượt đuổi gay cấn thót tim fans hâm mộ
+              </p>
               <div class="reaction d-flex">
                 <span class="like mr-2">
                   <a href=""><i class="far fa-thumbs-up"></i></a>
@@ -1192,13 +1283,13 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-sm-4">
             <div class="newsContent">
               <img class="w-100 rounded"
-                src="./assets/images/promising-young-woman-bong-hong-nuoc-anh-carey-mulligan-va-man-tra-thu-dan-ong-de-doi-16166710855522.png"
-                alt="">
+                src="./assets/images/blackkklansman-coc-nuoc-lanh-de-nguoi-my-thuc-tinh-15910862294165.png" alt="">
               <a href="">Ấn định chắc nịch ngày khởi chiếu 16.04, Lý Hải tung clip Lật Mặt: 48H đậm chất</a>
-              <p>Trước thềm khởi chiếu 16.04 này, Lý Hải bất ngờ tung clip rượt đuổi gay cấn thót tim fans hâm mộ</p>
+              <p>Trước thềm khởi chiếu 16.04 này, Lý Hải bất ngờ tung clip rượt đuổi gay cấn thót tim fans hâm mộ
+              </p>
               <div class="reaction d-flex">
                 <span class="like mr-2">
                   <a href=""><i class="far fa-thumbs-up"></i></a>
@@ -1211,13 +1302,13 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-sm-4">
             <div class="newsContent">
               <img class="w-100 rounded"
-                src="./assets/images/vua-dep-lai-vua-tai-nang-dan-sao-nam-cua-phim-ban-tay-diet-quy-dam-bao-don-tim-hoi-chi-em-16165783843676.png"
-                alt="">
+                src="./assets/images/american-sniper-chinh-nghia-hay-phi-nghia-15905660338111.png" alt="">
               <a href="">Ấn định chắc nịch ngày khởi chiếu 16.04, Lý Hải tung clip Lật Mặt: 48H đậm chất</a>
-              <p>Trước thềm khởi chiếu 16.04 này, Lý Hải bất ngờ tung clip rượt đuổi gay cấn thót tim fans hâm mộ</p>
+              <p>Trước thềm khởi chiếu 16.04 này, Lý Hải bất ngờ tung clip rượt đuổi gay cấn thót tim fans hâm mộ
+              </p>
               <div class="reaction d-flex">
                 <span class="like mr-2">
                   <a href=""><i class="far fa-thumbs-up"></i></a>
@@ -1230,7 +1321,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-sm-4">
             <div class="row">
               <div class="col-md-12">
                 <div class="news">
@@ -1281,13 +1372,14 @@
       </div>
       <div class="tab-pane fade" id="nav-combo" role="tabpanel" aria-labelledby="nav-combo-tab">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-sm-6">
             <div class="newsContent">
               <img class="w-100 rounded"
                 src="./assets/images/an-dinh-chac-nich-ngay-khoi-chieu-16-04-ly-hai-tung-clip-lat-mat-48h-dam-chat-fast-furious-mien-song-nuoc-16170881088272.png"
                 alt="">
               <a href="">Ấn định chắc nịch ngày khởi chiếu 16.04, Lý Hải tung clip Lật Mặt: 48H đậm chất</a>
-              <p>Trước thềm khởi chiếu 16.04 này, Lý Hải bất ngờ tung clip rượt đuổi gay cấn thót tim fans hâm mộ</p>
+              <p>Trước thềm khởi chiếu 16.04 này, Lý Hải bất ngờ tung clip rượt đuổi gay cấn thót tim fans hâm mộ
+              </p>
               <div class="reaction d-flex">
                 <span class="like mr-2">
                   <a href=""><i class="far fa-thumbs-up"></i></a>
@@ -1300,13 +1392,14 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-sm-6">
             <div class="newsContent">
               <img class="w-100 rounded"
                 src="./assets/images/mortal-kombat-cuoc-chien-sinh-tu-goi-ten-nhung-phim-dien-anh-noi-tieng-duoc-chuyen-the-tu-cac-tua-game-dinh-dam-16170160290762.png"
                 alt="">
               <a href="">Ấn định chắc nịch ngày khởi chiếu 16.04, Lý Hải tung clip Lật Mặt: 48H đậm chất</a>
-              <p>Trước thềm khởi chiếu 16.04 này, Lý Hải bất ngờ tung clip rượt đuổi gay cấn thót tim fans hâm mộ</p>
+              <p>Trước thềm khởi chiếu 16.04 này, Lý Hải bất ngờ tung clip rượt đuổi gay cấn thót tim fans hâm mộ
+              </p>
               <div class="reaction d-flex">
                 <span class="like mr-2">
                   <a href=""><i class="far fa-thumbs-up"></i></a>
@@ -1319,13 +1412,14 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-sm-4">
             <div class="newsContent">
               <img class="w-100 rounded"
                 src="./assets/images/promising-young-woman-bong-hong-nuoc-anh-carey-mulligan-va-man-tra-thu-dan-ong-de-doi-16166710855522.png"
                 alt="">
               <a href="">Ấn định chắc nịch ngày khởi chiếu 16.04, Lý Hải tung clip Lật Mặt: 48H đậm chất</a>
-              <p>Trước thềm khởi chiếu 16.04 này, Lý Hải bất ngờ tung clip rượt đuổi gay cấn thót tim fans hâm mộ</p>
+              <p>Trước thềm khởi chiếu 16.04 này, Lý Hải bất ngờ tung clip rượt đuổi gay cấn thót tim fans hâm mộ
+              </p>
               <div class="reaction d-flex">
                 <span class="like mr-2">
                   <a href=""><i class="far fa-thumbs-up"></i></a>
@@ -1338,13 +1432,14 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-sm-4">
             <div class="newsContent">
               <img class="w-100 rounded"
                 src="./assets/images/vua-dep-lai-vua-tai-nang-dan-sao-nam-cua-phim-ban-tay-diet-quy-dam-bao-don-tim-hoi-chi-em-16165783843676.png"
                 alt="">
               <a href="">Ấn định chắc nịch ngày khởi chiếu 16.04, Lý Hải tung clip Lật Mặt: 48H đậm chất</a>
-              <p>Trước thềm khởi chiếu 16.04 này, Lý Hải bất ngờ tung clip rượt đuổi gay cấn thót tim fans hâm mộ</p>
+              <p>Trước thềm khởi chiếu 16.04 này, Lý Hải bất ngờ tung clip rượt đuổi gay cấn thót tim fans hâm mộ
+              </p>
               <div class="reaction d-flex">
                 <span class="like mr-2">
                   <a href=""><i class="far fa-thumbs-up"></i></a>
@@ -1357,7 +1452,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-sm-4">
             <div class="row">
               <div class="col-md-12">
                 <div class="news">
@@ -1411,8 +1506,8 @@
   <section id="appBlock">
     <div class="wrapHomeapp ml-auto mr-auto">
       <div class="row">
-        <div class="col-12 col-md-6 d-flex align-items-center">
-          <div class="wrap">
+        <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center">
+          <div class="wrap text-center text-lg-start">
             <div class="appTitle">
               <h2>Ứng dụng tiện lợi dành cho người yêu điện ảnh</h2>
             </div>
@@ -1427,7 +1522,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-lg-6">
           <div class="mobile-box">
             <img class="w-100" src="./assets/images/mobile.png" alt="">
             <div class="carousel_slick_4">
@@ -1568,9 +1663,9 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./lib/slick/slick.min.js"></script>
   <script src="./javascript/slick.js"></script>
-   <!-- Venobox -->
-   <script src="./lib/venobox/venobox.min.js"></script>
-   <script src="./javascript/venobox.js"></script>
+  <!-- Venobox -->
+  <script src="./lib/venobox/venobox.min.js"></script>
+  <script src="./javascript/venobox.js"></script>
 </body>
 
 </html>
